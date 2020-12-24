@@ -9,13 +9,14 @@ set(EXECUTABLE ${PROJECT_NAME}.elf)
 
 set(SRC_FILES
     Startup/startup_stm32g071xx.s
-    Src/main.c
-    Src/system_init.c
-    Src/system_stm32f0xx.c
-    Src/adc.c
-    Src/gpio.c
-    Src/tim.c
-    Src/uart.c)
+    #Src/main.c
+    #Src/system_init.c
+    Src/system_stm32g0xx.c
+    #Src/adc.c
+    #Src/gpio.c
+    #Src/tim.c
+    #Src/uart.c
+        )
 
 add_executable(${EXECUTABLE} ${SRC_FILES})
 
@@ -42,7 +43,7 @@ target_compile_options(${EXECUTABLE} PRIVATE
     )
 
 target_link_options(${EXECUTABLE} PRIVATE
-    -T/home/gareth/Documents/Electronics/Projects/XenonPansy/STM32/STM32G071RBTX_FLASH.ld
+    -T/home/gareth/Documents/Electronics/Projects/XenonPansy/STM32/STM32G071CBTX_FLASH.ld
     -mcpu=cortex-m0+
     -mthumb
     -mfloat-abi=soft
