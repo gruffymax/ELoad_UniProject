@@ -1,0 +1,45 @@
+//
+// Created by gareth on 29/12/2020.
+//
+
+#include "clock_tree.h"
+
+static inline void enable_hsi(void);
+static inline void enable_periph_clocks(void);
+static inline void config_pll(void);
+static inline void config_clock_source(void);
+
+void init_clock_tree(void)
+{
+    enable_hsi();
+    enable_periph_clocks();
+}
+
+static inline void enable_hsi(void)
+{
+    //Enable HSI (High Speed Internal oscillator)
+    SET_BIT(RCC->CR, RCC_CR_HSION);
+    while (READ_BIT(RCC->CR, RCC_CR_HSERDY) == (0))
+    {
+        //Wait until HSI is enabled
+    }
+}
+
+static inline void enable_periph_clocks(void)
+{
+    MODIFY_REG(RCC->CFGR, RCC_CFGR_HPRE, 0x0U); //Set AHB prescaler to 1
+    MODIFY_REG(RCC->CFGR, RCC_CFGR_PPRE, 0x0U); //Set APB prescaler to 1
+    MODIFY_REG(RCC->CFGR, RCC_CFGR_SW, 0x2U); //Set clock source to HSI
+    while (READ_BIT(RCC->CFGR, RCC_CFGR_SWS) != RCC_CFGR_SWS_1)
+    {
+        //Wait here until clock source is confirmed to be PLL
+    }
+    //ToDo
+    /* Arm Cortex peripheral clocks need to be enabled to use peripheral */
+    SET_BIT(RCC->APBENR2, RCC_APBENR2_SYSCFGEN); //Enable SYS_CFG peripheral
+    SET_BIT(RCC->APBENR1, RCC_APBENR1_PWREN); //Enable Power peripheral
+    SET_BIT(RCC->IOPENR, RCC_IOPENR_GPIOAEN); //Enable GPIOA peripheral
+    SET_BIT(RCC->APBENR1, RCC_APBENR1_DAC1EN); //Enable DAC peripheral
+    SET_BIT(RCC->APBENR2, RCC_APBENR2_ADCEN); //Enable ADC peripheral
+
+}

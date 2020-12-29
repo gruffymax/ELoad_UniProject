@@ -9,14 +9,14 @@ set(EXECUTABLE ${PROJECT_NAME}.elf)
 
 set(SRC_FILES
     Startup/startup_stm32g071xx.s
-    #Src/main.c
-    #Src/system_init.c
+    Src/main.c
+    Src/init.c
     Src/system_stm32g0xx.c
     #Src/adc.c
     #Src/gpio.c
     #Src/tim.c
     #Src/uart.c
-        )
+    Src/init.c Src/clock_tree.c)
 
 add_executable(${EXECUTABLE} ${SRC_FILES})
 
@@ -26,11 +26,11 @@ target_include_directories(${EXECUTABLE} PRIVATE
     Drivers/CMSIS/Device/ST/STM32G0xx/Include)
 
 target_compile_definitions(${EXECUTABLE} PRIVATE
-    -DSTM32G071xB
+    -DSTM32G071xx
     )
 
 target_compile_options(${EXECUTABLE} PRIVATE
-    -mcpu=cortex-m0+
+    -mcpu=cortex-m0plus
     -g3
     -O0
     -ffunction-sections
@@ -43,8 +43,8 @@ target_compile_options(${EXECUTABLE} PRIVATE
     )
 
 target_link_options(${EXECUTABLE} PRIVATE
-    -T/home/gareth/Documents/Electronics/Projects/XenonPansy/STM32/STM32G071CBTX_FLASH.ld
-    -mcpu=cortex-m0+
+    -T/home/gareth/Dropbox/Uni/L6/Individual_Project/STM32/STM32G071CBTx_FLASH.ld
+    -mcpu=cortex-m0plus
     -mthumb
     -mfloat-abi=soft
     --specs=nosys.specs
