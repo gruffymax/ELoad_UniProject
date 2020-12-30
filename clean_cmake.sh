@@ -1,0 +1,9 @@
+#Clean
+rm -rf CMakeFiles
+rm -f CMakeCache.txt
+rm -f cmake_install.cmake
+rm -f Makefile
+
+#CMake
+cmake .
+make -j4
