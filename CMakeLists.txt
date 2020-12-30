@@ -8,15 +8,14 @@ set(CMAKE_C_EXTENSIONS ON)
 set(EXECUTABLE ${PROJECT_NAME}.elf)
 
 set(SRC_FILES
-    Startup/startup_stm32g071xx.s
-    Src/main.c
-    Src/init.c
-    Src/system_stm32g0xx.c
-    #Src/adc.c
-    #Src/gpio.c
-    #Src/tim.c
-    #Src/uart.c
-    Src/init.c Src/clock_tree.c)
+        Startup/startup_stm32g071xx.s
+        Src/main.c
+        Src/init.c
+        Src/system_stm32g0xx.c
+        Src/clock_tree.c
+        Src/gpio.c
+        /home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c
+)
 
 add_executable(${EXECUTABLE} ${SRC_FILES})
 

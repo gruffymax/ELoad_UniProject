@@ -1,5 +1,6 @@
 #include "stm32g0xx.h"
 #include "init.h"
+#include "gpio.h"
 #include "clock_tree.h"
 
 void init_system(void)
@@ -10,11 +11,6 @@ void init_system(void)
     init_uart();
     init_timers();
     init_dac();
-}
-
-void init_gpio(void)
-{
-    //ToDo
 }
 
 void init_adc(void)

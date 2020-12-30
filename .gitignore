@@ -1,4 +1,7 @@
 
 cmake-build-debug/
+CMakeFiles/
+.vscode/
 
 .idea/
+CMakeFiles/CMakeError.log

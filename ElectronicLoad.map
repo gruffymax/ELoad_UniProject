@@ -1,0 +1,703 @@
+Archive member included to satisfy reference by file (symbol)
+
+/opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                              CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj (__aeabi_uidiv)
+/opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                              /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+/opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+                              /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (exit)
+/opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+                              /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
+/opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+                              /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (__libc_init_array)
+/opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+                              /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (memset)
+/opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-strlen.o)
+                              CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj (strlen)
+/opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+                              /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o) (_exit)
+
+Allocating common symbols
+Common symbol       size              file
+
+p_st7066u_iface     0x4               CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crti.o
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crti.o
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crti.o
+ .data          0x0000000000000000        0x4 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
+ .text          0x0000000000000000       0x80 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .ARM.exidx     0x0000000000000000       0x10 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .ARM.attributes
+                0x0000000000000000       0x1b /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+ .text          0x0000000000000000       0x14 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000      0xa72 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0x2e CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0x8e CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0x51 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000      0x103 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0x6a CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000      0x1df CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0x1c CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0xd7 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000      0x4da CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000      0x11f CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000     0xc4f2 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0x3c CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .data.SystemCoreClock
+                0x0000000000000000        0x4 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .rodata.AHBPrescTable
+                0x0000000000000000       0x40 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .rodata.APBPrescTable
+                0x0000000000000000       0x20 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .text.SystemCoreClockUpdate
+                0x0000000000000000      0x108 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000      0xa72 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0x2e CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0x8e CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0x51 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000      0x103 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0x6a CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000      0x1df CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0x1c CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0xd7 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000      0x4da CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000      0x11f CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000     0xc4f2 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0x3c CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000      0xa72 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0x2e CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0x8e CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0x51 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000      0x103 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0x6a CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000      0x1df CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0x1c CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0xd7 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000      0x4da CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000      0x11f CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000     0xc4f2 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0x3c CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .text.init_gpio
+                0x0000000000000000        0xa CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_info    0x0000000000000000       0xed CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_abbrev  0x0000000000000000       0x82 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_aranges
+                0x0000000000000000       0x20 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_ranges  0x0000000000000000       0x10 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0xcd CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000      0xa72 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0x2e CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0x8e CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0x51 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000      0x103 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0x6a CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000      0x1df CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0x1c CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0xd7 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000      0x4da CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000      0x11f CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000     0xc4f2 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0x3c CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_line    0x0000000000000000      0x365 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_str     0x0000000000000000    0x4e52d CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .comment       0x0000000000000000       0x4d CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_frame   0x0000000000000000       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .ARM.attributes
+                0x0000000000000000       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .text.lcd_initialise
+                0x0000000000000000       0x4c CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .text.set_instruction
+                0x0000000000000000      0x134 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .text.set_instruction_wakeup
+                0x0000000000000000       0xfc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .text.send_char
+                0x0000000000000000      0x134 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .text.send_line1
+                0x0000000000000000       0x64 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .text.send_line2
+                0x0000000000000000       0x64 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .text.check_busy_flag
+                0x0000000000000000       0xe8 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_info    0x0000000000000000      0xbce CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_abbrev  0x0000000000000000      0x222 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_aranges
+                0x0000000000000000       0x50 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_ranges  0x0000000000000000       0x40 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000      0x13b CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000      0xa72 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x8e CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x51 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000      0x103 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x6a CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000      0x1df CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x52 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x18 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x3c CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x34 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000      0x174 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x16 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x43 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x34 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x10 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x58 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x71 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x1c CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000      0x12a CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000      0x339 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x10 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x35 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_line    0x0000000000000000      0x60a CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_str     0x0000000000000000     0x72a7 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .comment       0x0000000000000000       0x4d CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_frame   0x0000000000000000       0xf0 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .ARM.attributes
+                0x0000000000000000       0x2c CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ COMMON         0x0000000000000000        0x4 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .text          0x0000000000000000      0x114 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_frame   0x0000000000000000       0x20 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .text          0x0000000000000000        0x4 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0000000000000000       0x1e /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .text.exit     0x0000000000000000       0x2c /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x0000000000000000       0x28 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x0000000000000000        0x4 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .data.impure_data
+                0x0000000000000000       0x60 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x0000000000000000        0x4 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .text.memset   0x0000000000000000       0x10 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x0000000000000000       0x20 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .text          0x0000000000000000        0xe /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-strlen.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-strlen.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x0000000000000000       0x1c /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-strlen.o)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .text._exit    0x0000000000000000        0x4 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .debug_frame   0x0000000000000000       0x20 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtend.o
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtend.o
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtend.o
+ .eh_frame      0x0000000000000000        0x4 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtend.o
+ .ARM.attributes
+                0x0000000000000000       0x2c /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtend.o
+ .text          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtn.o
+ .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtn.o
+ .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x0000000020000000 0x0000000000009000 xrw
+FLASH            0x0000000008000000 0x0000000000020000 xr
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crti.o
+LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
+LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
+LOAD CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+LOAD CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+LOAD CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+LOAD CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+LOAD CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+LOAD CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+LOAD CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+START GROUP
+LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a
+LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+END GROUP
+START GROUP
+LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a
+LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a
+END GROUP
+START GROUP
+LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a
+LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a
+END GROUP
+LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtend.o
+LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtn.o
+                0x0000000020009000                _estack = 0x20009000
+                0x0000000000000200                _Min_Heap_Size = 0x200
+                0x0000000000000400                _Min_Stack_Size = 0x400
+
+.isr_vector     0x0000000008000000       0xbc
+                0x0000000008000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x0000000008000000       0xbc CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+                0x0000000008000000                g_pfnVectors
+                0x00000000080000bc                . = ALIGN (0x4)
+
+.text           0x00000000080000bc      0x24c
+                0x00000000080000bc                . = ALIGN (0x4)
+ *(.text)
+ .text          0x00000000080000bc       0x48 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
+ *(.text*)
+ .text.Reset_Handler
+                0x0000000008000104       0x50 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+                0x0000000008000104                Reset_Handler
+ .text.Default_Handler
+                0x0000000008000154        0x2 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+                0x0000000008000154                USART3_4_LPUART1_IRQHandler
+                0x0000000008000154                TIM1_CC_IRQHandler
+                0x0000000008000154                HardFault_Handler
+                0x0000000008000154                ADC1_COMP_IRQHandler
+                0x0000000008000154                SysTick_Handler
+                0x0000000008000154                PVD_IRQHandler
+                0x0000000008000154                PendSV_Handler
+                0x0000000008000154                NMI_Handler
+                0x0000000008000154                I2C1_IRQHandler
+                0x0000000008000154                TIM7_LPTIM2_IRQHandler
+                0x0000000008000154                RTC_TAMP_IRQHandler
+                0x0000000008000154                SPI1_IRQHandler
+                0x0000000008000154                EXTI2_3_IRQHandler
+                0x0000000008000154                I2C2_IRQHandler
+                0x0000000008000154                TIM17_IRQHandler
+                0x0000000008000154                TIM16_IRQHandler
+                0x0000000008000154                TIM3_IRQHandler
+                0x0000000008000154                EXTI4_15_IRQHandler
+                0x0000000008000154                RCC_IRQHandler
+                0x0000000008000154                DMA1_Channel1_IRQHandler
+                0x0000000008000154                Default_Handler
+                0x0000000008000154                CEC_IRQHandler
+                0x0000000008000154                TIM14_IRQHandler
+                0x0000000008000154                TIM15_IRQHandler
+                0x0000000008000154                EXTI0_1_IRQHandler
+                0x0000000008000154                SPI2_IRQHandler
+                0x0000000008000154                SVC_Handler
+                0x0000000008000154                TIM6_DAC_LPTIM1_IRQHandler
+                0x0000000008000154                WWDG_IRQHandler
+                0x0000000008000154                TIM2_IRQHandler
+                0x0000000008000154                DMA1_Ch4_7_DMAMUX1_OVR_IRQHandler
+                0x0000000008000154                DMA1_Channel2_3_IRQHandler
+                0x0000000008000154                UCPD1_2_IRQHandler
+                0x0000000008000154                USART2_IRQHandler
+                0x0000000008000154                FLASH_IRQHandler
+                0x0000000008000154                USART1_IRQHandler
+                0x0000000008000154                TIM1_BRK_UP_TRG_COM_IRQHandler
+ .text.main     0x0000000008000156        0xa CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+                0x0000000008000156                main
+ .text.init_system
+                0x0000000008000160       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+                0x0000000008000160                init_system
+ .text.init_gpio
+                0x0000000008000182        0xa CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+                0x0000000008000182                init_gpio
+ .text.init_adc
+                0x000000000800018c        0xa CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+                0x000000000800018c                init_adc
+ .text.init_uart
+                0x0000000008000196        0xa CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+                0x0000000008000196                init_uart
+ .text.init_timers
+                0x00000000080001a0        0xa CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+                0x00000000080001a0                init_timers
+ .text.init_dac
+                0x00000000080001aa        0xa CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+                0x00000000080001aa                init_dac
+ .text.SystemInit
+                0x00000000080001b4       0x18 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+                0x00000000080001b4                SystemInit
+ .text.init_clock_tree
+                0x00000000080001cc       0x16 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+                0x00000000080001cc                init_clock_tree
+ *fill*         0x00000000080001e2        0x2 
+ .text.enable_hsi
+                0x00000000080001e4       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .text.configure_system_clock
+                0x0000000008000210       0x48 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .text.enable_periph_clocks
+                0x0000000008000258       0x50 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .text.__libc_init_array
+                0x00000000080002a8       0x48 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+                0x00000000080002a8                __libc_init_array
+ *(.glue_7)
+ .glue_7        0x00000000080002f0        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x00000000080002f0        0x0 linker stubs
+ *(.eh_frame)
+ .eh_frame      0x00000000080002f0        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
+ *(.init)
+ .init          0x00000000080002f0        0x4 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crti.o
+                0x00000000080002f0                _init
+ .init          0x00000000080002f4        0x8 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtn.o
+ *(.fini)
+ .fini          0x00000000080002fc        0x4 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crti.o
+                0x00000000080002fc                _fini
+ .fini          0x0000000008000300        0x8 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtn.o
+                0x0000000008000308                . = ALIGN (0x4)
+                0x0000000008000308                _etext = .
+
+.vfp11_veneer   0x0000000008000308        0x0
+ .vfp11_veneer  0x0000000008000308        0x0 linker stubs
+
+.v4_bx          0x0000000008000308        0x0
+ .v4_bx         0x0000000008000308        0x0 linker stubs
+
+.iplt           0x0000000008000308        0x0
+ .iplt          0x0000000008000308        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
+
+.rel.dyn        0x0000000008000308        0x0
+ .rel.iplt      0x0000000008000308        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
+
+.rodata         0x0000000008000308        0x0
+                0x0000000008000308                . = ALIGN (0x4)
+ *(.rodata)
+ *(.rodata*)
+                0x0000000008000308                . = ALIGN (0x4)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM            0x0000000008000308        0x0
+                0x0000000008000308                __exidx_start = .
+ *(.ARM.exidx*)
+                0x0000000008000308                __exidx_end = .
+
+.preinit_array  0x0000000008000308        0x0
+                0x0000000008000308                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array*)
+                0x0000000008000308                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000008000308        0x4
+                0x0000000008000308                PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array*)
+ .init_array    0x0000000008000308        0x4 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x000000000800030c                PROVIDE (__init_array_end = .)
+
+.fini_array     0x000000000800030c        0x4
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array*)
+ .fini_array    0x000000000800030c        0x4 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
+                [!provide]                        PROVIDE (__fini_array_end = .)
+                0x0000000008000310                _sidata = LOADADDR (.data)
+
+.data           0x0000000020000000        0x0 load address 0x0000000008000310
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _sdata = .
+ *(.data)
+ *(.data*)
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _edata = .
+
+.igot.plt       0x0000000020000000        0x0 load address 0x0000000008000310
+ .igot.plt      0x0000000020000000        0x0 /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000020000000                . = ALIGN (0x4)
+
+.bss            0x0000000020000000       0x1c load address 0x0000000008000310
+                0x0000000020000000                _sbss = .
+                0x0000000020000000                __bss_start__ = _sbss
+ *(.bss)
+ .bss           0x0000000020000000       0x1c /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
+ *(.bss*)
+ *(COMMON)
+                0x000000002000001c                . = ALIGN (0x4)
+                0x000000002000001c                _ebss = .
+                0x000000002000001c                __bss_end__ = _ebss
+
+._user_heap_stack
+                0x000000002000001c      0x604 load address 0x0000000008000310
+                0x0000000020000020                . = ALIGN (0x8)
+ *fill*         0x000000002000001c        0x4 
+                [!provide]                        PROVIDE (end = .)
+                [!provide]                        PROVIDE (_end = .)
+                0x0000000020000220                . = (. + _Min_Heap_Size)
+ *fill*         0x0000000020000020      0x200 
+                0x0000000020000620                . = (. + _Min_Stack_Size)
+ *fill*         0x0000000020000220      0x400 
+                0x0000000020000620                . = ALIGN (0x8)
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.ARM.attributes
+                0x0000000000000000       0x28
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x0000000000000000       0x1e /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crti.o
+ .ARM.attributes
+                0x000000000000001e       0x2c /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtbegin.o
+ .ARM.attributes
+                0x000000000000004a       0x22 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+ .ARM.attributes
+                0x000000000000006c       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .ARM.attributes
+                0x0000000000000098       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .ARM.attributes
+                0x00000000000000c4       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .ARM.attributes
+                0x00000000000000f0       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .ARM.attributes
+                0x000000000000011c       0x2c /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000000000000148       0x1e /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/crtn.o
+OUTPUT(ElectronicLoad.elf elf32-littlearm)
+LOAD linker stubs
+LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a
+LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
+LOAD /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v6-m/nofp/libgcc.a
+
+.debug_line     0x0000000000000000      0xf9e
+ .debug_line    0x0000000000000000       0xb4 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+ .debug_line    0x00000000000000b4      0x36e CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_line    0x0000000000000422      0x3d9 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_line    0x00000000000007fb      0x3bc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_line    0x0000000000000bb7      0x3e7 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+
+.debug_info     0x0000000000000000      0x8a9
+ .debug_info    0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+ .debug_info    0x0000000000000022       0xf1 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_info    0x0000000000000113      0x147 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_info    0x000000000000025a      0x3b2 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_info    0x000000000000060c      0x29d CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+
+.debug_abbrev   0x0000000000000000      0x329
+ .debug_abbrev  0x0000000000000000       0x12 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+ .debug_abbrev  0x0000000000000012       0x84 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_abbrev  0x0000000000000096       0x9c CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_abbrev  0x0000000000000132      0x116 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_abbrev  0x0000000000000248       0xe1 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+
+.debug_aranges  0x0000000000000000       0xf0
+ .debug_aranges
+                0x0000000000000000       0x28 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+ .debug_aranges
+                0x0000000000000028       0x20 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_aranges
+                0x0000000000000048       0x48 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_aranges
+                0x0000000000000090       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_aranges
+                0x00000000000000b8       0x38 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+
+.debug_str      0x0000000000000000    0x4e6f9
+ .debug_str     0x0000000000000000       0x96 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+ .debug_str     0x0000000000000096    0x4e365 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+                                      0x4e528 (size before relaxing)
+ .debug_str     0x000000000004e3fb       0x9b CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+                                      0x4e57e (size before relaxing)
+ .debug_str     0x000000000004e496      0x1d6 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+                                      0x4e6a7 (size before relaxing)
+ .debug_str     0x000000000004e66c       0x8d CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+                                      0x4e633 (size before relaxing)
+
+.debug_ranges   0x0000000000000000       0xa8
+ .debug_ranges  0x0000000000000000       0x20 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+ .debug_ranges  0x0000000000000020       0x10 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_ranges  0x0000000000000030       0x38 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_ranges  0x0000000000000068       0x18 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_ranges  0x0000000000000080       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+
+.debug_macro    0x0000000000000000     0xdea3
+ .debug_macro   0x0000000000000000       0xcd CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x00000000000000cd      0xa72 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000b3f       0x2e CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000b6d       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000b95       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000bb7       0x8e CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000c45       0x51 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000c96      0x103 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000d99       0x6a CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000e03      0x1df CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000fe2       0x1c CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000ffe       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000001020       0xd7 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x00000000000010f7      0x4da CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x00000000000015d1      0x11f CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x00000000000016f0     0xc4f2 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x000000000000dbe2       0x3c CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x000000000000dc1e       0xd7 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x000000000000dcf5       0xe1 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x000000000000ddd6       0xcd CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+
+.comment        0x0000000000000000       0x4c
+ .comment       0x0000000000000000       0x4c CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+                                         0x4d (size before relaxing)
+ .comment       0x000000000000004c       0x4d CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .comment       0x000000000000004c       0x4d CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .comment       0x000000000000004c       0x4d CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+
+.debug_frame    0x0000000000000000      0x1dc
+ .debug_frame   0x0000000000000000       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_frame   0x000000000000002c       0xb8 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_frame   0x00000000000000e4       0x4c CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_frame   0x0000000000000130       0x80 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_frame   0x00000000000001b0       0x2c /opt/gcc-arm-none-eabi-9-2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)

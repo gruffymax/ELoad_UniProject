@@ -7,6 +7,13 @@
 
 #include "stm32g0xx.h"
 
+/* Clock source :- HSI (16MHz)
+ * AHB Prescaler :- 1
+ * APB Prescaler :- 1
+ * Clock source :- HSI (No PLL)
+ *
+ * */
+
 void init_clock_tree(void);
 
 #endif //ELECTRONICLOAD_CLOCK_TREE_H
