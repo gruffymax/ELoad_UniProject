@@ -5,3 +5,9 @@ CMakeFiles/
 
 .idea/
 CMakeFiles/CMakeError.log
+Makefile
+*.bin
+*.elf
+*.map
+CMakeCache.txt
+cmake_install.cmake
