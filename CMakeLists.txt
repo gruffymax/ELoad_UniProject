@@ -1,14 +1,12 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.13)
 project(ElectronicLoad)
 
 enable_language(C ASM)
-set(CMAKE_FIND_ROOT_PATH /opt/gcc-arm-none-eabi-10-2020-q4-major/bin)
-set(CMAKE_C_COMPILER arm-none-eabi-gcc)
-set(CMAKE_ASM_COMPILER ${CMAKE_C_COMPILER})
-set(CMAKE_CXX_COMPILER arm-none-eabi-g++)
+
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS ON)
+
 set(EXECUTABLE ${PROJECT_NAME}.elf)
 
 set(SRC_FILES

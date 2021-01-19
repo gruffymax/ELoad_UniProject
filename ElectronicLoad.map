@@ -1,7 +1,7 @@
 Archive member included to satisfy reference by file (symbol)
 
 /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
-                              CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o (__aeabi_uidiv)
+                              CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj (__aeabi_uidiv)
 /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
                               /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
 /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o)
@@ -13,7 +13,7 @@ Archive member included to satisfy reference by file (symbol)
 /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
                               /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (memset)
 /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-strlen.o)
-                              CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o (strlen)
+                              CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj (strlen)
 /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
                               /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-exit.o) (_exit)
 
@@ -31,253 +31,253 @@ Discarded input sections
  .ARM.exidx     0x0000000000000000       0x10 /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
  .ARM.attributes
                 0x0000000000000000       0x1b /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
- .text          0x0000000000000000       0x14 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.o
- .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.o
- .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .text          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .text          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_macro   0x0000000000000000      0xa42 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_macro   0x0000000000000000       0x2e CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_macro   0x0000000000000000       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_macro   0x0000000000000000       0x8e CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_macro   0x0000000000000000       0x51 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_macro   0x0000000000000000      0x103 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_macro   0x0000000000000000       0x6a CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_macro   0x0000000000000000      0x1df CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_macro   0x0000000000000000       0x1c CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_macro   0x0000000000000000       0xd1 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_macro   0x0000000000000000      0x4da CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_macro   0x0000000000000000      0x11f CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_macro   0x0000000000000000     0xc4f2 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_macro   0x0000000000000000       0x3c CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .text          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
+ .text          0x0000000000000000       0x14 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000      0xa42 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0x2e CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0x8e CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0x51 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000      0x103 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0x6a CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000      0x1df CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0x1c CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0xd1 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000      0x4da CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000      0x11f CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000     0xc4f2 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x0000000000000000       0x3c CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
  .data.SystemCoreClock
-                0x0000000000000000        0x4 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
+                0x0000000000000000        0x4 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
  .rodata.AHBPrescTable
-                0x0000000000000000       0x40 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
+                0x0000000000000000       0x40 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
  .rodata.APBPrescTable
-                0x0000000000000000       0x20 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
+                0x0000000000000000       0x20 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
  .text.SystemCoreClockUpdate
-                0x0000000000000000      0x108 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_macro   0x0000000000000000      0xa42 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_macro   0x0000000000000000       0x2e CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_macro   0x0000000000000000       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_macro   0x0000000000000000       0x8e CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_macro   0x0000000000000000       0x51 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_macro   0x0000000000000000      0x103 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_macro   0x0000000000000000       0x6a CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_macro   0x0000000000000000      0x1df CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_macro   0x0000000000000000       0x1c CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_macro   0x0000000000000000       0xd1 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_macro   0x0000000000000000      0x4da CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_macro   0x0000000000000000      0x11f CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_macro   0x0000000000000000     0xc4f2 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_macro   0x0000000000000000       0x3c CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .text          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_macro   0x0000000000000000      0xa42 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_macro   0x0000000000000000       0x2e CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_macro   0x0000000000000000       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_macro   0x0000000000000000       0x8e CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_macro   0x0000000000000000       0x51 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_macro   0x0000000000000000      0x103 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_macro   0x0000000000000000       0x6a CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_macro   0x0000000000000000      0x1df CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_macro   0x0000000000000000       0x1c CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_macro   0x0000000000000000       0xd1 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_macro   0x0000000000000000      0x4da CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_macro   0x0000000000000000      0x11f CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_macro   0x0000000000000000     0xc4f2 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_macro   0x0000000000000000       0x3c CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .text          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .debug_macro   0x0000000000000000      0xa42 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .debug_macro   0x0000000000000000       0x2e CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .debug_macro   0x0000000000000000       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .debug_macro   0x0000000000000000       0x8e CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .debug_macro   0x0000000000000000       0x51 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .debug_macro   0x0000000000000000      0x103 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .debug_macro   0x0000000000000000       0x6a CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .debug_macro   0x0000000000000000      0x1df CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .debug_macro   0x0000000000000000       0x1c CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .debug_macro   0x0000000000000000       0xd1 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .debug_macro   0x0000000000000000      0x4da CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .debug_macro   0x0000000000000000      0x11f CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .debug_macro   0x0000000000000000     0xc4f2 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .debug_macro   0x0000000000000000       0x3c CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .text          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
+                0x0000000000000000      0x108 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000      0xa42 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0x2e CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0x8e CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0x51 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000      0x103 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0x6a CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000      0x1df CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0x1c CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0xd1 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000      0x4da CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000      0x11f CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000     0xc4f2 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x0000000000000000       0x3c CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000      0xa42 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0x2e CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0x8e CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0x51 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000      0x103 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0x6a CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000      0x1df CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0x1c CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0xd1 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000      0x4da CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000      0x11f CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000     0xc4f2 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x0000000000000000       0x3c CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000      0xa42 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0x2e CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0x8e CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0x51 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000      0x103 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0x6a CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000      0x1df CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0x1c CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0xd1 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000      0x4da CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000      0x11f CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000     0xc4f2 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .debug_macro   0x0000000000000000       0x3c CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .group         0x0000000000000000        0xc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
  .bss.p_st7066u_iface
-                0x0000000000000000        0x4 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
+                0x0000000000000000        0x4 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
  .text.lcd_initialise
-                0x0000000000000000       0x4c CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
+                0x0000000000000000       0x4c CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
  .text.set_instruction
-                0x0000000000000000      0x134 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
+                0x0000000000000000      0x134 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
  .text.set_instruction_wakeup
-                0x0000000000000000       0xfc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
+                0x0000000000000000       0xfc CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
  .text.send_char
-                0x0000000000000000      0x134 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
+                0x0000000000000000      0x134 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
  .text.send_line1
-                0x0000000000000000       0x64 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
+                0x0000000000000000       0x64 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
  .text.send_line2
-                0x0000000000000000       0x64 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
+                0x0000000000000000       0x64 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
  .text.check_busy_flag
-                0x0000000000000000       0xe8 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_info    0x0000000000000000      0x339 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_abbrev  0x0000000000000000      0x132 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
+                0x0000000000000000       0xe8 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_info    0x0000000000000000      0x339 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_abbrev  0x0000000000000000      0x132 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
  .debug_aranges
-                0x0000000000000000       0x50 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_ranges  0x0000000000000000       0x40 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000      0x13b CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000      0xa42 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000       0x8e CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000       0x51 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000      0x103 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000       0x6a CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000      0x1df CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000       0x52 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000       0x18 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000       0x3c CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000       0x34 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000      0x174 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000       0x16 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000       0x43 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000       0x34 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000       0x10 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000       0x58 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000       0x71 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000       0x1c CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000      0x12a CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000      0x333 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000       0x10 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_macro   0x0000000000000000       0x35 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_line    0x0000000000000000      0x60b CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_str     0x0000000000000000     0x6d9b CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .comment       0x0000000000000000       0x4e CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
- .debug_frame   0x0000000000000000       0xf0 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
+                0x0000000000000000       0x50 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_ranges  0x0000000000000000       0x40 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000      0x13b CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000      0xa42 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x8e CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x51 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000      0x103 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x6a CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000      0x1df CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x52 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x18 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x3c CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x34 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000      0x174 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x16 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x43 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x34 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x10 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x58 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x71 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x1c CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000      0x12a CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000      0x333 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x10 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_macro   0x0000000000000000       0x35 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_line    0x0000000000000000      0x60b CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_str     0x0000000000000000     0x6d90 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .comment       0x0000000000000000       0x4e CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
+ .debug_frame   0x0000000000000000       0xf0 CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
  .ARM.attributes
-                0x0000000000000000       0x2c CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
+                0x0000000000000000       0x2c CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
  .text          0x0000000000000000      0x114 /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
  .data          0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
  .bss           0x0000000000000000        0x0 /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
@@ -352,13 +352,13 @@ Linker script and memory map
 LOAD /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/crti.o
 LOAD /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/crtbegin.o
 LOAD /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
-LOAD CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.o
-LOAD CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
-LOAD CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
-LOAD CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
-LOAD CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
-LOAD CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
-LOAD CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.o
+LOAD CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+LOAD CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+LOAD CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+LOAD CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+LOAD CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+LOAD CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+LOAD CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
 START GROUP
 LOAD /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/libgcc.a
 LOAD /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
@@ -382,7 +382,7 @@ LOAD /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1
 .isr_vector     0x0000000008000000       0xbc
                 0x0000000008000000                . = ALIGN (0x4)
  *(.isr_vector)
- .isr_vector    0x0000000008000000       0xbc CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.o
+ .isr_vector    0x0000000008000000       0xbc CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
                 0x0000000008000000                g_pfnVectors
                 0x00000000080000bc                . = ALIGN (0x4)
 
@@ -392,10 +392,10 @@ LOAD /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1
  .text          0x00000000080000bc       0x48 /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/crtbegin.o
  *(.text*)
  .text.Reset_Handler
-                0x0000000008000104       0x50 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.o
+                0x0000000008000104       0x50 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
                 0x0000000008000104                Reset_Handler
  .text.Default_Handler
-                0x0000000008000154        0x2 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.o
+                0x0000000008000154        0x2 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
                 0x0000000008000154                USART3_4_LPUART1_IRQHandler
                 0x0000000008000154                TIM1_CC_IRQHandler
                 0x0000000008000154                HardFault_Handler
@@ -433,27 +433,27 @@ LOAD /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1
                 0x0000000008000154                FLASH_IRQHandler
                 0x0000000008000154                USART1_IRQHandler
                 0x0000000008000154                TIM1_BRK_UP_TRG_COM_IRQHandler
- .text.main     0x0000000008000156        0xa CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
+ .text.main     0x0000000008000156        0xa CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
                 0x0000000008000156                main
  .text.init_system
-                0x0000000008000160       0x12 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
+                0x0000000008000160       0x12 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
                 0x0000000008000160                init_system
  *fill*         0x0000000008000172        0x2 
  .text.SystemInit
-                0x0000000008000174       0x18 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
+                0x0000000008000174       0x18 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
                 0x0000000008000174                SystemInit
  .text.init_clock_tree
-                0x000000000800018c       0x16 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
+                0x000000000800018c       0x16 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
                 0x000000000800018c                init_clock_tree
  *fill*         0x00000000080001a2        0x2 
  .text.enable_hsi
-                0x00000000080001a4       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
+                0x00000000080001a4       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
  .text.configure_system_clock
-                0x00000000080001d0       0x48 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
+                0x00000000080001d0       0x48 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
  .text.enable_periph_clocks
-                0x0000000008000218       0x50 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
+                0x0000000008000218       0x50 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
  .text.init_gpio
-                0x0000000008000268        0xa CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
+                0x0000000008000268        0xa CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
                 0x0000000008000268                init_gpio
  *fill*         0x0000000008000272        0x2 
  .text.__libc_init_array
@@ -570,17 +570,17 @@ LOAD /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1
  .ARM.attributes
                 0x000000000000001e       0x2c /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/crtbegin.o
  .ARM.attributes
-                0x000000000000004a       0x22 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.o
+                0x000000000000004a       0x22 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
  .ARM.attributes
-                0x000000000000006c       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
+                0x000000000000006c       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
  .ARM.attributes
-                0x0000000000000098       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
+                0x0000000000000098       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
  .ARM.attributes
-                0x00000000000000c4       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
+                0x00000000000000c4       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
  .ARM.attributes
-                0x00000000000000f0       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
+                0x00000000000000f0       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
  .ARM.attributes
-                0x000000000000011c       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
+                0x000000000000011c       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
  .ARM.attributes
                 0x0000000000000148       0x2c /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
  .ARM.attributes
@@ -591,100 +591,100 @@ LOAD /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1
 LOAD /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 LOAD /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/libgcc.a
 
-.debug_line     0x0000000000000000     0x12b4
- .debug_line    0x0000000000000000       0xb4 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.o
- .debug_line    0x00000000000000b4      0x36f CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_line    0x0000000000000423      0x386 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_line    0x00000000000007a9      0x3bd CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_line    0x0000000000000b66      0x3e8 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_line    0x0000000000000f4e      0x366 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
+.debug_line     0x0000000000000000     0x11d8
+ .debug_line    0x0000000000000000       0xa9 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+ .debug_line    0x00000000000000a9      0x343 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_line    0x00000000000003ec      0x35a CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_line    0x0000000000000746      0x39c CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_line    0x0000000000000ae2      0x3bc CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_line    0x0000000000000e9e      0x33a CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
 
 .debug_info     0x0000000000000000      0x7a8
- .debug_info    0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.o
- .debug_info    0x0000000000000022       0x86 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_info    0x00000000000000a8       0x82 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_info    0x000000000000012a      0x3b2 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_info    0x00000000000004dc      0x24a CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_info    0x0000000000000726       0x82 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
+ .debug_info    0x0000000000000000       0x22 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+ .debug_info    0x0000000000000022       0x86 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_info    0x00000000000000a8       0x82 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_info    0x000000000000012a      0x3b2 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_info    0x00000000000004dc      0x24a CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_info    0x0000000000000726       0x82 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
 
 .debug_abbrev   0x0000000000000000      0x2b4
- .debug_abbrev  0x0000000000000000       0x12 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.o
- .debug_abbrev  0x0000000000000012       0x49 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_abbrev  0x000000000000005b       0x47 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_abbrev  0x00000000000000a2      0x116 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_abbrev  0x00000000000001b8       0xb5 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_abbrev  0x000000000000026d       0x47 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
+ .debug_abbrev  0x0000000000000000       0x12 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+ .debug_abbrev  0x0000000000000012       0x49 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_abbrev  0x000000000000005b       0x47 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_abbrev  0x00000000000000a2      0x116 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_abbrev  0x00000000000001b8       0xb5 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_abbrev  0x000000000000026d       0x47 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
 
 .debug_aranges  0x0000000000000000       0xe8
  .debug_aranges
-                0x0000000000000000       0x28 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.o
+                0x0000000000000000       0x28 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
  .debug_aranges
-                0x0000000000000028       0x20 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
+                0x0000000000000028       0x20 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
  .debug_aranges
-                0x0000000000000048       0x20 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
+                0x0000000000000048       0x20 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
  .debug_aranges
-                0x0000000000000068       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
+                0x0000000000000068       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
  .debug_aranges
-                0x0000000000000090       0x38 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
+                0x0000000000000090       0x38 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
  .debug_aranges
-                0x00000000000000c8       0x20 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
+                0x00000000000000c8       0x20 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
 
-.debug_str      0x0000000000000000    0x4e633
- .debug_str     0x0000000000000000       0x96 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.o
- .debug_str     0x0000000000000096    0x4e239 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
-                                      0x4e3f3 (size before relaxing)
- .debug_str     0x000000000004e2cf       0x80 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
-                                      0x4e42e (size before relaxing)
- .debug_str     0x000000000004e34f      0x20d CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
-                                      0x4e5b2 (size before relaxing)
- .debug_str     0x000000000004e55c       0x8d CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
-                                      0x4e512 (size before relaxing)
- .debug_str     0x000000000004e5e9       0x4a CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
-                                      0x4e3f8 (size before relaxing)
+.debug_str      0x0000000000000000    0x4e5e6
+ .debug_str     0x0000000000000000       0x80 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+ .debug_str     0x0000000000000080    0x4e22e CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+                                      0x4e3dd (size before relaxing)
+ .debug_str     0x000000000004e2ae       0x75 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+                                      0x4e418 (size before relaxing)
+ .debug_str     0x000000000004e323      0x202 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+                                      0x4e59c (size before relaxing)
+ .debug_str     0x000000000004e525       0x82 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+                                      0x4e4fc (size before relaxing)
+ .debug_str     0x000000000004e5a7       0x3f CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
+                                      0x4e3e2 (size before relaxing)
 
 .debug_ranges   0x0000000000000000       0x90
- .debug_ranges  0x0000000000000000       0x20 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.o
- .debug_ranges  0x0000000000000020       0x10 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_ranges  0x0000000000000030       0x10 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_ranges  0x0000000000000040       0x18 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_ranges  0x0000000000000058       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_ranges  0x0000000000000080       0x10 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
+ .debug_ranges  0x0000000000000000       0x20 CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
+ .debug_ranges  0x0000000000000020       0x10 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_ranges  0x0000000000000030       0x10 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_ranges  0x0000000000000040       0x18 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_ranges  0x0000000000000058       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_ranges  0x0000000000000080       0x10 CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
 
 .debug_macro    0x0000000000000000     0xdf44
- .debug_macro   0x0000000000000000       0xcd CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_macro   0x00000000000000cd      0xa42 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_macro   0x0000000000000b0f       0x2e CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_macro   0x0000000000000b3d       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_macro   0x0000000000000b65       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_macro   0x0000000000000b87       0x8e CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_macro   0x0000000000000c15       0x51 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_macro   0x0000000000000c66      0x103 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_macro   0x0000000000000d69       0x6a CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_macro   0x0000000000000dd3      0x1df CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_macro   0x0000000000000fb2       0x1c CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_macro   0x0000000000000fce       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_macro   0x0000000000000ff0       0xd1 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_macro   0x00000000000010c1      0x4da CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_macro   0x000000000000159b      0x11f CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_macro   0x00000000000016ba     0xc4f2 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_macro   0x000000000000dbac       0x3c CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_macro   0x000000000000dbe8       0xe1 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_macro   0x000000000000dcc9       0xe1 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_macro   0x000000000000ddaa       0xcd CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_macro   0x000000000000de77       0xcd CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
+ .debug_macro   0x0000000000000000       0xcd CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x00000000000000cd      0xa42 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000b0f       0x2e CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000b3d       0x28 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000b65       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000b87       0x8e CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000c15       0x51 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000c66      0x103 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000d69       0x6a CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000dd3      0x1df CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000fb2       0x1c CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000fce       0x22 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x0000000000000ff0       0xd1 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x00000000000010c1      0x4da CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x000000000000159b      0x11f CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x00000000000016ba     0xc4f2 CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x000000000000dbac       0x3c CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_macro   0x000000000000dbe8       0xe1 CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_macro   0x000000000000dcc9       0xe1 CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_macro   0x000000000000ddaa       0xcd CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_macro   0x000000000000de77       0xcd CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
 
 .comment        0x0000000000000000       0x4d
- .comment       0x0000000000000000       0x4d CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
+ .comment       0x0000000000000000       0x4d CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
                                          0x4e (size before relaxing)
- .comment       0x000000000000004d       0x4e CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .comment       0x000000000000004d       0x4e CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .comment       0x000000000000004d       0x4e CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .comment       0x000000000000004d       0x4e CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
+ .comment       0x000000000000004d       0x4e CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .comment       0x000000000000004d       0x4e CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .comment       0x000000000000004d       0x4e CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .comment       0x000000000000004d       0x4e CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
 
 .debug_frame    0x0000000000000000      0x17c
- .debug_frame   0x0000000000000000       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.o
- .debug_frame   0x000000000000002c       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.o
- .debug_frame   0x0000000000000058       0x4c CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.o
- .debug_frame   0x00000000000000a4       0x80 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.o
- .debug_frame   0x0000000000000124       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.o
+ .debug_frame   0x0000000000000000       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.obj
+ .debug_frame   0x000000000000002c       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/init.c.obj
+ .debug_frame   0x0000000000000058       0x4c CMakeFiles/ElectronicLoad.elf.dir/Src/system_stm32g0xx.c.obj
+ .debug_frame   0x00000000000000a4       0x80 CMakeFiles/ElectronicLoad.elf.dir/Src/clock_tree.c.obj
+ .debug_frame   0x0000000000000124       0x2c CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.obj
  .debug_frame   0x0000000000000150       0x2c /opt/gcc-arm-none-eabi-10-2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)

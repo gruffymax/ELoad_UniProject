@@ -5,5 +5,5 @@ rm -f cmake_install.cmake
 rm -f Makefile
 
 #CMake
-cmake .
+cmake -DCMAKE_TOOLCHAIN_FILE=toolchain.cmake .
 make -j4

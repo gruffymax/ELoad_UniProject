@@ -19,7 +19,7 @@ static inline void enable_hsi(void)
 {
     //Enable HSI (High Speed Internal oscillator)
     SET_BIT(RCC->CR, RCC_CR_HSION);
-    while (READ_BIT(RCC->CR, RCC_CR_HSERDY) == (0))
+    while (READ_BIT(RCC->CR, RCC_CR_HSIRDY) == (0))
     {
         //Wait until HSI is enabled
     }
