@@ -22,6 +22,7 @@ set(SRC_FILES
         Src/system_stm32g0xx.c
         Src/clock_tree.c
         Src/gpio.c
+        Src/st7066u_lcd.c
         Src/syscalls.c
         FreeRTOS/Source/tasks.c
         #FreeRTOS/Source/croutine.c
@@ -32,7 +33,7 @@ set(SRC_FILES
         FreeRTOS/Source/timers.c
         FreeRTOS/Source/portable/MemMang/heap_3.c
         FreeRTOS/Source/portable/GCC/ARM_CM0/port.c
-        /home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c
+        
 )
 
 add_executable(${EXECUTABLE} ${SRC_FILES})

@@ -412,6 +412,33 @@ Src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/Src/main.c.s
 .PHONY : Src/main.c.s
 
+Src/st7066u_lcd.obj: Src/st7066u_lcd.c.obj
+
+.PHONY : Src/st7066u_lcd.obj
+
+# target to build an object file
+Src/st7066u_lcd.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/Src/st7066u_lcd.c.obj
+.PHONY : Src/st7066u_lcd.c.obj
+
+Src/st7066u_lcd.i: Src/st7066u_lcd.c.i
+
+.PHONY : Src/st7066u_lcd.i
+
+# target to preprocess a source file
+Src/st7066u_lcd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/Src/st7066u_lcd.c.i
+.PHONY : Src/st7066u_lcd.c.i
+
+Src/st7066u_lcd.s: Src/st7066u_lcd.c.s
+
+.PHONY : Src/st7066u_lcd.s
+
+# target to generate assembly for a file
+Src/st7066u_lcd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/Src/st7066u_lcd.c.s
+.PHONY : Src/st7066u_lcd.c.s
+
 Src/syscalls.obj: Src/syscalls.c.obj
 
 .PHONY : Src/syscalls.obj
@@ -475,33 +502,6 @@ Startup/startup_stm32g071xx.s.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/Startup/startup_stm32g071xx.s.obj
 .PHONY : Startup/startup_stm32g071xx.s.obj
 
-home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.obj: home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
-
-.PHONY : home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.obj
-
-# target to build an object file
-home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
-.PHONY : home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.obj
-
-home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.i: home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.i
-
-.PHONY : home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.i
-
-# target to preprocess a source file
-home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.i
-.PHONY : home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.i
-
-home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.s: home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.s
-
-.PHONY : home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.s
-
-# target to generate assembly for a file
-home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.s
-.PHONY : home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -541,6 +541,9 @@ help:
 	@echo "... Src/main.obj"
 	@echo "... Src/main.i"
 	@echo "... Src/main.s"
+	@echo "... Src/st7066u_lcd.obj"
+	@echo "... Src/st7066u_lcd.i"
+	@echo "... Src/st7066u_lcd.s"
 	@echo "... Src/syscalls.obj"
 	@echo "... Src/syscalls.i"
 	@echo "... Src/syscalls.s"
@@ -548,9 +551,6 @@ help:
 	@echo "... Src/system_stm32g0xx.i"
 	@echo "... Src/system_stm32g0xx.s"
 	@echo "... Startup/startup_stm32g071xx.obj"
-	@echo "... home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.obj"
-	@echo "... home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.i"
-	@echo "... home/gareth/Documents/Electronics/Libraries/ST7066U_LCD/st7066u_lcd.s"
 .PHONY : help
 
 
