@@ -11,3 +11,6 @@ Makefile
 *.map
 CMakeCache.txt
 cmake_install.cmake
+*.jdebug
+*.jdebug.user
+

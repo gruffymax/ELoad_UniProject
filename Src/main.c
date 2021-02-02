@@ -2,32 +2,34 @@
 #include "init.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "proj_tasks.h"
+#include <stdint.h>
+#include <stddef.h>
 
 
-void task_blink(void *argument);
+uint32_t milliseconds = 0;
+
+void delay(uint32_t);
 
 int main(void)
 {
     BaseType_t retval = 0;
     /* Initialise system */
     init_system();
-
+    //task_blink(NULL);
+    
     /* Configure Tasks and start scheduler */
-    retval = xTaskCreate(task_blink, "task_blink", 128, NULL, tskIDLE_PRIORITY + 2, NULL);
-    if (retval == pdPASS)
+    retval = xTaskCreate(task_blink1, "task_blink1", 15, NULL, tskIDLE_PRIORITY + 2, NULL);
+    if (retval != pdPASS)
 	{
-	    vTaskStartScheduler();
+        while(1); //Error Occured
 	}
-
-    /* While loop to catch if FreeRTOS exits unexpectedly */
-    while(1);
-}
-
-void task_blink(void *argument)
-{
-    //Blinky code here
-    while(1)
-    {
-        	    
-    }
+	
+	retval = xTaskCreate(task_blink2, "task_blink2", 15, NULL, tskIDLE_PRIORITY + 2, NULL);
+    if (retval != pdPASS)
+	{
+        while(1); //Error Occured
+	}
+	
+    vTaskStartScheduler();
 }

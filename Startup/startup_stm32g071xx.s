@@ -141,11 +141,14 @@ g_pfnVectors:
   .word 0
   .word 0
   .word 0
-  .word SVC_Handler
+  /*.word SVC_Handler*/
+  .word vPortSVCHandler
   .word 0
   .word 0
-  .word PendSV_Handler
-  .word SysTick_Handler
+  /*.word PendSV_Handler*/
+  .word xPortPendSVHandler
+  /*.word SysTick_Handler*/
+  .word xPortSysTickHandler
   .word WWDG_IRQHandler                   /* Window WatchDog              */
   .word PVD_IRQHandler                    /* PVD through EXTI Line detect */
   .word RTC_TAMP_IRQHandler               /* RTC through the EXTI line    */

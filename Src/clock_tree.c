@@ -35,6 +35,9 @@ static inline void configure_system_clock(void)
     {
         //Wait here until clock source is confirmed to be HSISYS
     }
+    SystemInit();
+    SystemCoreClockUpdate();
+    SysTick_Config(SystemCoreClock/1600);
 }
 
 static inline void enable_periph_clocks(void)
