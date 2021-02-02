@@ -24,6 +24,7 @@ set(SRC_FILES
         Src/gpio.c
         Src/st7066u_lcd.c
         Src/syscalls.c
+        Src/proj_tasks.c
         FreeRTOS/Source/tasks.c
         FreeRTOS/Source/list.c
         FreeRTOS/Source/queue.c
@@ -31,8 +32,13 @@ set(SRC_FILES
         FreeRTOS/Source/portable/MemMang/heap_3.c
         FreeRTOS/Source/portable/GCC/ARM_CM0/port.c
         #~/Documents/SEGGER/Syscalls/SEGGER_RTT_Syscalls_GCC.c
+        #~/Documents/SEGGER/SEGGER_SYSVIEW_FreeRTOS.c
+        #~/Documents/SEGGER/SEGGER_SYSVIEW_Config_FreeRTOS.c
         #~/Documents/SEGGER/SEGGER_SYSVIEW.c
         #~/Documents/SEGGER/SEGGER_RTT.c
+        #~/Documents/SEGGER/SEGGER_RTT_printf.c
+        #~/Documents/SEGGER/Syscalls/SEGGER_RTT_Syscalls_GCC.c
+        
         
 )
 

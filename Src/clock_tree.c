@@ -1,18 +1,28 @@
-//
-// Created by gareth on 29/12/2020.
-//
+/* Electronic Load Project 
+ * Gareth Waymark up762102
+ * 
+ * Cortex Clock Tree initialisation
+ */
 
 #include "clock_tree.h"
 
+static inline void flashLatency(void);
 static inline void enable_hsi(void);
 static inline void configure_system_clock(void);
 static inline void enable_periph_clocks(void);
 
 void init_clock_tree(void)
 {
+    flashLatency();
     enable_hsi();
     configure_system_clock();
     enable_periph_clocks();
+}
+
+static inline void flashLatency(void)
+{
+    /* Set flash latency to two wait states */
+    MODIFY_REG(FLASH->ACR, FLASH_ACR_LATENCY, FLASH_ACR_LATENCY_1);
 }
 
 static inline void enable_hsi(void)
@@ -47,6 +57,7 @@ static inline void enable_periph_clocks(void)
     SET_BIT(RCC->APBENR2, RCC_APBENR2_SYSCFGEN);    //Enable SYS_CFG peripheral
     SET_BIT(RCC->APBENR1, RCC_APBENR1_PWREN);       //Enable Power peripheral
     SET_BIT(RCC->IOPENR, RCC_IOPENR_GPIOAEN);       //Enable GPIOA peripheral
+    SET_BIT(RCC->IOPENR, RCC_IOPENR_GPIOBEN);       //Enable GPIOB peripheral
     SET_BIT(RCC->APBENR1, RCC_APBENR1_DAC1EN);      //Enable DAC peripheral
     SET_BIT(RCC->APBENR2, RCC_APBENR2_ADCEN);       //Enable ADC peripheral
 

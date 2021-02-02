@@ -90,5 +90,7 @@
 #define INCLUDE_xTaskResumeFromISR              1
 
 /* A header file that defines trace macro can be included here. */
-
+//#include "SEGGER_SYSVIEW_FreeRTOS.h"
+//#define INCLUDE_xTaskGetIdleTaskHandle 1
+//#define INCLUDE_pxTaskGetStackStart 1
 #endif /* FREERTOS_CONFIG_H */

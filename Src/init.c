@@ -1,3 +1,9 @@
+/* Electronic Load Project 
+ * Gareth Waymark up762102
+ * 
+ * Initialisation functions
+ */
+
 #include "stm32g0xx.h"
 #include "init.h"
 #include "gpio.h"
