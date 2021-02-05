@@ -8,11 +8,13 @@
 #include "init.h"
 #include "gpio.h"
 #include "clock_tree.h"
+#include "dac.h"
 
 void init_system(void)
 {
     init_clock_tree();
     init_gpio();
+    init_dac();
     //init_adc();
     //init_uart();
     //init_timers();

@@ -22,6 +22,7 @@ set(SRC_FILES
         Src/system_stm32g0xx.c
         Src/clock_tree.c
         Src/gpio.c
+        Src/dac.c
         Src/st7066u_lcd.c
         Src/syscalls.c
         Src/proj_tasks.c
