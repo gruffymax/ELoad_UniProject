@@ -13,4 +13,5 @@ CMakeCache.txt
 cmake_install.cmake
 *.jdebug
 *.jdebug.user
+*.kate-swp
 

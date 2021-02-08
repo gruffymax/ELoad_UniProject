@@ -4,7 +4,7 @@ void init_dac(void)
 {
     SET_BIT(DAC->CR, DAC_CR_EN1); // Enable DAC channel 1
     CLEAR_BIT(DAC->CR, DAC_CR_TEN1); // Enable software triggering
-    write_dac1_value(0x0000F00); // Set DAC output to 0;
+    write_dac1_value(0x00007D0); // Set DAC output to 1V;
 }
 
 void write_dac1_value(uint32_t value)

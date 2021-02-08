@@ -3,10 +3,12 @@
 #include "st7066u_lcd.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "dac.h"
 
 
 
 uint16_t counter = 0;
+
 struct st7066u_iface lcd_interface = {
     set_lcd_rw,
     set_lcd_en,
@@ -38,8 +40,16 @@ void task2(void *argument)
 {
     while(1)
     {
-        counter++;
-        vTaskDelay(1000); //Wait 1000 ticks
+        if (counter >= 4095)
+        {
+            counter = 0;
+        }
+        else
+        {
+            counter++;
+        }
+        write_dac1_value(counter);
+        vTaskDelay(10); //Wait 1000 ticks
     }
 }
 

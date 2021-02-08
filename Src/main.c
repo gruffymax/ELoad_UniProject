@@ -19,11 +19,6 @@ int main(void)
     
     /* Configure Tasks and start scheduler */
     BaseType_t retval = 0;
-    retval = xTaskCreate(task1, "task1", 15, NULL, tskIDLE_PRIORITY + 2, NULL);
-    if (retval != pdPASS)
-	{
-        while(1); //Error Occured
-	}
 	
 	retval = xTaskCreate(task2, "task2", 15, NULL, tskIDLE_PRIORITY + 2, NULL);
     if (retval != pdPASS)
