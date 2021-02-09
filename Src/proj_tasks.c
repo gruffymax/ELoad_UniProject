@@ -48,7 +48,7 @@ void task2(void *argument)
         {
             counter++;
         }
-        write_dac1_value(counter);
+        write_dac1_value(200);
         vTaskDelay(10); //Wait 1000 ticks
     }
 }
