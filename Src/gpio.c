@@ -19,8 +19,6 @@ void init_gpio(void)
 
 static void configureGPIOA(void)
 {
-    /* TESTING */
-    MODIFY_REG(GPIOA->MODER, GPIO_MODER_MODE2, GPIO_MODER_MODE2_0); // Output pin
     /* Configure GPIOA pins */
     /* Configure DAC pin */
     MODIFY_REG(GPIOA->MODER, GPIO_MODER_MODE4, GPIO_MODER_MODE4_0 | GPIO_MODER_MODE4_1); // Analog pin
@@ -44,6 +42,8 @@ static void configureGPIOA(void)
     /* Configure Rotary encoder */
     /* Push switch */
     MODIFY_REG(GPIOA->MODER, GPIO_MODER_MODE15, 0x0); // Input mode
+    
+    
 }
 
 static void configureGPIOB(void)
@@ -108,13 +108,6 @@ static void configureGPIOB(void)
     SET_BIT(GPIOB->OTYPER, GPIO_OTYPER_OT9); // Open Drain
     //MODIFY_REG(GPIOB->OSPEEDR, GPIO_OSPEEDR_OSPEED9, GPIO_OSPEEDR_OSPEED9_0);
     
-    SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS10); //Set D4
-    SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS7);  //Set D5
-    SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS8);  //Set D6
-    SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS9);  //Set D7
-    SET_BIT(GPIOD->BSRR, GPIO_BSRR_BS3);  //Set RW
-
-    SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS5);  //Set RS
     
 }
 
@@ -123,7 +116,5 @@ static void configureGPIOD(void)
     /* Configure Rotary Encoder */
     /* Channel A */
     MODIFY_REG(GPIOD->MODER, GPIO_MODER_MODE0, 0x0); // Input mode
-    
-    /* Channel B */
-    MODIFY_REG(GPIOD->MODER, GPIO_MODER_MODE1, 0x0); // Input mode
+
 }

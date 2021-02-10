@@ -56,6 +56,7 @@ static inline void enable_periph_clocks(void)
     /* Arm Cortex peripheral clocks need to be enabled to use peripheral */
     SET_BIT(RCC->APBENR2, RCC_APBENR2_SYSCFGEN);    //Enable SYS_CFG peripheral
     SET_BIT(RCC->APBENR1, RCC_APBENR1_PWREN);       //Enable Power peripheral
+    
     SET_BIT(RCC->IOPENR, RCC_IOPENR_GPIOAEN);       //Enable GPIOA peripheral
     SET_BIT(RCC->IOPENR, RCC_IOPENR_GPIOBEN);       //Enable GPIOB peripheral
     SET_BIT(RCC->IOPENR, RCC_IOPENR_GPIODEN);       //Enable GPIOD peripheral
