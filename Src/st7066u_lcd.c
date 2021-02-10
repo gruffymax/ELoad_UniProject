@@ -33,7 +33,7 @@ void lcd_initialise(struct st7066u_iface *pt_st7066u_iface)
 	set_instruction(0x28);
 
 	/* Display setup */
-	set_instruction(0x0C); // Display ON, Cursor OFF, Blink OFF
+	set_instruction(0x0E); // Display ON, Cursor ON, Blink OFF
 
 	/* Display Clear */
 	set_instruction(0x01); // Clear display
@@ -196,7 +196,7 @@ void send_line1(char *line1)
 	uint8_t msg_len = strlen(line1);
 	uint8_t i = 0;
 
-	set_instruction(0x01);
+	set_instruction(0x01); //Clear Display Instruction
 
 	for (i=0; i<msg_len; i++) {
 		send_char(line1[i]);
@@ -208,10 +208,34 @@ void send_line2(char *line2)
 	uint8_t msg_len = strlen(line2);
 	uint8_t i = 0;
 
-	set_instruction(0xC0);
+	set_instruction(0xC0); //Set DDRAM Address 0x40 Line 2
 
 	for (i=0; i<msg_len; i++) {
 			send_char(line2[i]);
+	}
+}
+
+void send_line3(char *line3)
+{
+	uint8_t msg_len = strlen(line3);
+	uint8_t i = 0;
+
+	set_instruction(0x94); //Set DDRAM Address 0x14 Line 3
+
+	for (i=0; i<msg_len; i++) {
+			send_char(line3[i]);
+	}
+}
+
+void send_line4(char *line4)
+{
+	uint8_t msg_len = strlen(line4);
+	uint8_t i = 0;
+
+	set_instruction(0xD4); //Set DDRAM Address 0x54 Line 4
+
+	for (i=0; i<msg_len; i++) {
+			send_char(line4[i]);
 	}
 }
 

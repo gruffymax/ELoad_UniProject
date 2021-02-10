@@ -11,7 +11,11 @@
 #include "proj_tasks.h"
 #include <stdint.h>
 #include <stddef.h>
+
 #include "st7066u_lcd.h"
+
+
+void SysTick_Handler(void)
 
 int main(void)
 {
@@ -35,6 +39,9 @@ int main(void)
     lcd_interface.us_delay(10000);
     lcd_initialise(&lcd_interface);
     send_line1("Hello World");
+    send_line2("Line2");
+    send_line3("Line3");
+    send_line4("Line4");
     
     while(1);
 }

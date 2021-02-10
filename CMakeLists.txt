@@ -26,7 +26,6 @@ set(SRC_FILES
         Src/st7066u_lcd.c
         Src/syscalls.c
         Src/proj_tasks.c
-        Src/hitachi_lcd.c
         #FreeRTOS/Source/tasks.c
         #FreeRTOS/Source/list.c
         #FreeRTOS/Source/queue.c
@@ -57,7 +56,6 @@ target_include_directories(${EXECUTABLE} PRIVATE
 
 target_compile_definitions(${EXECUTABLE} PRIVATE
     -DSTM32G071xx
-    -DST7066U
     )
 
 target_compile_options(${EXECUTABLE} PRIVATE

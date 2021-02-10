@@ -6,7 +6,6 @@
  */
 #include "hitachi_lcd.h"
 #include <string.h>
-#include "main.h"
 
 struct st7066u_iface *p_st7066u_iface1; /**< Pointer to struct of interface functions */
 

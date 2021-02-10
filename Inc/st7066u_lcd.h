@@ -91,6 +91,18 @@ void send_line1(char * line1);
  */
 void send_line2(char * line1);
 
+/*!
+ * @brief Send string of characters to the line 3 buffer of the LCD
+ * @param[in] line1: String of characters to send to LCD line 3
+ */
+void send_line3(char * line3);
+
+/*!
+ * @brief Send string of characters to the line 4 buffer of the LCD
+ * @param[in] line1: String of characters to send to LCD line 4
+ */
+void send_line4(char * line4);
+
 #ifdef __cplusplus
 }
 #endif

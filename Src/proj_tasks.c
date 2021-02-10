@@ -1,6 +1,14 @@
 #include "proj_tasks.h"
 #include "stm32g0xx.h"
+
+#ifdef ST7066U
 #include "st7066u_lcd.h"
+#endif
+
+#ifdef HITACHI
+#include "hitachi_lcd.h"
+#endif
+
 //#include "FreeRTOS.h"
 //#include "task.h"
 #include "dac.h"
