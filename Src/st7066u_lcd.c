@@ -5,6 +5,7 @@
  * @author Gareth Waymark
  */
 #include "st7066u_lcd.h"
+
 #include <string.h>
 
 /*!

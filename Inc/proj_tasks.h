@@ -19,7 +19,7 @@ void set_d5_mode(uint8_t mode);
 void set_d6_mode(uint8_t mode);
 void set_d7_mode(uint8_t mode);
 uint8_t is_d7_set(void);
-void us_delay(uint16_t ms);
+void us_delay(uint32_t us);
 
 /* Task 1
  * Blinks an LED at 2 Hz

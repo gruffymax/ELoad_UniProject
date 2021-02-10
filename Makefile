@@ -88,8 +88,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -141,168 +141,6 @@ ElectronicLoad.elf: cmake_check_build_system
 ElectronicLoad.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/build
 .PHONY : ElectronicLoad.elf/fast
-
-FreeRTOS/Source/list.obj: FreeRTOS/Source/list.c.obj
-
-.PHONY : FreeRTOS/Source/list.obj
-
-# target to build an object file
-FreeRTOS/Source/list.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/FreeRTOS/Source/list.c.obj
-.PHONY : FreeRTOS/Source/list.c.obj
-
-FreeRTOS/Source/list.i: FreeRTOS/Source/list.c.i
-
-.PHONY : FreeRTOS/Source/list.i
-
-# target to preprocess a source file
-FreeRTOS/Source/list.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/FreeRTOS/Source/list.c.i
-.PHONY : FreeRTOS/Source/list.c.i
-
-FreeRTOS/Source/list.s: FreeRTOS/Source/list.c.s
-
-.PHONY : FreeRTOS/Source/list.s
-
-# target to generate assembly for a file
-FreeRTOS/Source/list.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/FreeRTOS/Source/list.c.s
-.PHONY : FreeRTOS/Source/list.c.s
-
-FreeRTOS/Source/portable/GCC/ARM_CM0/port.obj: FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
-
-.PHONY : FreeRTOS/Source/portable/GCC/ARM_CM0/port.obj
-
-# target to build an object file
-FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
-.PHONY : FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj
-
-FreeRTOS/Source/portable/GCC/ARM_CM0/port.i: FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.i
-
-.PHONY : FreeRTOS/Source/portable/GCC/ARM_CM0/port.i
-
-# target to preprocess a source file
-FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.i
-.PHONY : FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.i
-
-FreeRTOS/Source/portable/GCC/ARM_CM0/port.s: FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.s
-
-.PHONY : FreeRTOS/Source/portable/GCC/ARM_CM0/port.s
-
-# target to generate assembly for a file
-FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.s
-.PHONY : FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.s
-
-FreeRTOS/Source/portable/MemMang/heap_3.obj: FreeRTOS/Source/portable/MemMang/heap_3.c.obj
-
-.PHONY : FreeRTOS/Source/portable/MemMang/heap_3.obj
-
-# target to build an object file
-FreeRTOS/Source/portable/MemMang/heap_3.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/FreeRTOS/Source/portable/MemMang/heap_3.c.obj
-.PHONY : FreeRTOS/Source/portable/MemMang/heap_3.c.obj
-
-FreeRTOS/Source/portable/MemMang/heap_3.i: FreeRTOS/Source/portable/MemMang/heap_3.c.i
-
-.PHONY : FreeRTOS/Source/portable/MemMang/heap_3.i
-
-# target to preprocess a source file
-FreeRTOS/Source/portable/MemMang/heap_3.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/FreeRTOS/Source/portable/MemMang/heap_3.c.i
-.PHONY : FreeRTOS/Source/portable/MemMang/heap_3.c.i
-
-FreeRTOS/Source/portable/MemMang/heap_3.s: FreeRTOS/Source/portable/MemMang/heap_3.c.s
-
-.PHONY : FreeRTOS/Source/portable/MemMang/heap_3.s
-
-# target to generate assembly for a file
-FreeRTOS/Source/portable/MemMang/heap_3.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/FreeRTOS/Source/portable/MemMang/heap_3.c.s
-.PHONY : FreeRTOS/Source/portable/MemMang/heap_3.c.s
-
-FreeRTOS/Source/queue.obj: FreeRTOS/Source/queue.c.obj
-
-.PHONY : FreeRTOS/Source/queue.obj
-
-# target to build an object file
-FreeRTOS/Source/queue.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/FreeRTOS/Source/queue.c.obj
-.PHONY : FreeRTOS/Source/queue.c.obj
-
-FreeRTOS/Source/queue.i: FreeRTOS/Source/queue.c.i
-
-.PHONY : FreeRTOS/Source/queue.i
-
-# target to preprocess a source file
-FreeRTOS/Source/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/FreeRTOS/Source/queue.c.i
-.PHONY : FreeRTOS/Source/queue.c.i
-
-FreeRTOS/Source/queue.s: FreeRTOS/Source/queue.c.s
-
-.PHONY : FreeRTOS/Source/queue.s
-
-# target to generate assembly for a file
-FreeRTOS/Source/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/FreeRTOS/Source/queue.c.s
-.PHONY : FreeRTOS/Source/queue.c.s
-
-FreeRTOS/Source/tasks.obj: FreeRTOS/Source/tasks.c.obj
-
-.PHONY : FreeRTOS/Source/tasks.obj
-
-# target to build an object file
-FreeRTOS/Source/tasks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/FreeRTOS/Source/tasks.c.obj
-.PHONY : FreeRTOS/Source/tasks.c.obj
-
-FreeRTOS/Source/tasks.i: FreeRTOS/Source/tasks.c.i
-
-.PHONY : FreeRTOS/Source/tasks.i
-
-# target to preprocess a source file
-FreeRTOS/Source/tasks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/FreeRTOS/Source/tasks.c.i
-.PHONY : FreeRTOS/Source/tasks.c.i
-
-FreeRTOS/Source/tasks.s: FreeRTOS/Source/tasks.c.s
-
-.PHONY : FreeRTOS/Source/tasks.s
-
-# target to generate assembly for a file
-FreeRTOS/Source/tasks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/FreeRTOS/Source/tasks.c.s
-.PHONY : FreeRTOS/Source/tasks.c.s
-
-FreeRTOS/Source/timers.obj: FreeRTOS/Source/timers.c.obj
-
-.PHONY : FreeRTOS/Source/timers.obj
-
-# target to build an object file
-FreeRTOS/Source/timers.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/FreeRTOS/Source/timers.c.obj
-.PHONY : FreeRTOS/Source/timers.c.obj
-
-FreeRTOS/Source/timers.i: FreeRTOS/Source/timers.c.i
-
-.PHONY : FreeRTOS/Source/timers.i
-
-# target to preprocess a source file
-FreeRTOS/Source/timers.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/FreeRTOS/Source/timers.c.i
-.PHONY : FreeRTOS/Source/timers.c.i
-
-FreeRTOS/Source/timers.s: FreeRTOS/Source/timers.c.s
-
-.PHONY : FreeRTOS/Source/timers.s
-
-# target to generate assembly for a file
-FreeRTOS/Source/timers.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/FreeRTOS/Source/timers.c.s
-.PHONY : FreeRTOS/Source/timers.c.s
 
 Src/clock_tree.obj: Src/clock_tree.c.obj
 
@@ -384,6 +222,33 @@ Src/gpio.s: Src/gpio.c.s
 Src/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/Src/gpio.c.s
 .PHONY : Src/gpio.c.s
+
+Src/hitachi_lcd.obj: Src/hitachi_lcd.c.obj
+
+.PHONY : Src/hitachi_lcd.obj
+
+# target to build an object file
+Src/hitachi_lcd.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/Src/hitachi_lcd.c.obj
+.PHONY : Src/hitachi_lcd.c.obj
+
+Src/hitachi_lcd.i: Src/hitachi_lcd.c.i
+
+.PHONY : Src/hitachi_lcd.i
+
+# target to preprocess a source file
+Src/hitachi_lcd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/Src/hitachi_lcd.c.i
+.PHONY : Src/hitachi_lcd.c.i
+
+Src/hitachi_lcd.s: Src/hitachi_lcd.c.s
+
+.PHONY : Src/hitachi_lcd.s
+
+# target to generate assembly for a file
+Src/hitachi_lcd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ElectronicLoad.elf.dir/build.make CMakeFiles/ElectronicLoad.elf.dir/Src/hitachi_lcd.c.s
+.PHONY : Src/hitachi_lcd.c.s
 
 Src/init.obj: Src/init.c.obj
 
@@ -565,24 +430,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ElectronicLoad.elf"
-	@echo "... FreeRTOS/Source/list.obj"
-	@echo "... FreeRTOS/Source/list.i"
-	@echo "... FreeRTOS/Source/list.s"
-	@echo "... FreeRTOS/Source/portable/GCC/ARM_CM0/port.obj"
-	@echo "... FreeRTOS/Source/portable/GCC/ARM_CM0/port.i"
-	@echo "... FreeRTOS/Source/portable/GCC/ARM_CM0/port.s"
-	@echo "... FreeRTOS/Source/portable/MemMang/heap_3.obj"
-	@echo "... FreeRTOS/Source/portable/MemMang/heap_3.i"
-	@echo "... FreeRTOS/Source/portable/MemMang/heap_3.s"
-	@echo "... FreeRTOS/Source/queue.obj"
-	@echo "... FreeRTOS/Source/queue.i"
-	@echo "... FreeRTOS/Source/queue.s"
-	@echo "... FreeRTOS/Source/tasks.obj"
-	@echo "... FreeRTOS/Source/tasks.i"
-	@echo "... FreeRTOS/Source/tasks.s"
-	@echo "... FreeRTOS/Source/timers.obj"
-	@echo "... FreeRTOS/Source/timers.i"
-	@echo "... FreeRTOS/Source/timers.s"
 	@echo "... Src/clock_tree.obj"
 	@echo "... Src/clock_tree.i"
 	@echo "... Src/clock_tree.s"
@@ -592,6 +439,9 @@ help:
 	@echo "... Src/gpio.obj"
 	@echo "... Src/gpio.i"
 	@echo "... Src/gpio.s"
+	@echo "... Src/hitachi_lcd.obj"
+	@echo "... Src/hitachi_lcd.i"
+	@echo "... Src/hitachi_lcd.s"
 	@echo "... Src/init.obj"
 	@echo "... Src/init.i"
 	@echo "... Src/init.s"
