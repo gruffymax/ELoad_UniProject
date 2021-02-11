@@ -24,6 +24,7 @@ set(SRC_FILES
         Src/gpio.c
         Src/interrupts.c
         Src/dac.c
+        Src/display.c
         Src/st7066u_lcd.c
         Src/syscalls.c
         Src/proj_tasks.c
