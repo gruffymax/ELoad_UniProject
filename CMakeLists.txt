@@ -28,12 +28,12 @@ set(SRC_FILES
         Src/st7066u_lcd.c
         Src/syscalls.c
         Src/proj_tasks.c
-        #FreeRTOS/Source/tasks.c
-        #FreeRTOS/Source/list.c
-        #FreeRTOS/Source/queue.c
-        #FreeRTOS/Source/timers.c
-        #FreeRTOS/Source/portable/MemMang/heap_3.c
-        #FreeRTOS/Source/portable/GCC/ARM_CM0/port.c
+        FreeRTOS/Source/tasks.c
+        FreeRTOS/Source/list.c
+        FreeRTOS/Source/queue.c
+        FreeRTOS/Source/timers.c
+        FreeRTOS/Source/portable/MemMang/heap_3.c
+        FreeRTOS/Source/portable/GCC/ARM_CM0/port.c
         #~/Documents/SEGGER/Syscalls/SEGGER_RTT_Syscalls_GCC.c
         #~/Documents/SEGGER/SEGGER_SYSVIEW_FreeRTOS.c
         #~/Documents/SEGGER/SEGGER_SYSVIEW_Config_FreeRTOS.c
@@ -51,8 +51,8 @@ target_include_directories(${EXECUTABLE} PRIVATE
     Inc
     Drivers/CMSIS/Include
     Drivers/CMSIS/Device/ST/STM32G0xx/Include
-    #FreeRTOS/Source/include
-    #FreeRTOS/Source/portable/GCC/ARM_CM0
+    FreeRTOS/Source/include
+    FreeRTOS/Source/portable/GCC/ARM_CM0
     #~/Documents/SEGGER
 )
 

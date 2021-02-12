@@ -19,7 +19,14 @@ void lcd_init(void)
 {
     lcd_initialise(&lcd_interface);
 }
-    
+
+void write_display(struct displayData_s *displayData)
+{
+    send_line1(displayData->line1);
+    send_line2(displayData->line2);
+    send_line3(displayData->line3);
+    send_line4(displayData->line4);
+}
 void set_lcd_rw(uint8_t state)
 {
     if (state)

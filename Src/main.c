@@ -23,7 +23,6 @@ int main(void)
 
     
     init_system();
-;
     
     while(1);
 }

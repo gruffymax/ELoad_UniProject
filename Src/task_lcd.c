@@ -10,10 +10,16 @@ uint16_t counter = 0;
 
 void task1( *argument)
 {
+    struct displayData_s displayData;
+    displayData->line1 = "Hello World";
+    
+    
     us_delay(150000);
-    lcd_initialise(&lcd_interface);
-    send_line1("Hello World");
-    send_line2("Line2");
-    send_line3("Line3");
-    send_line4("Line4")
+    lcd_init();
+    while(1)
+    {
+        
+        write_display
+    }
+
 }
