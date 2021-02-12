@@ -27,7 +27,7 @@ set(SRC_FILES
         Src/display.c
         Src/st7066u_lcd.c
         Src/syscalls.c
-        Src/proj_tasks.c
+        Src/task_lcd.c
         FreeRTOS/Source/tasks.c
         FreeRTOS/Source/list.c
         FreeRTOS/Source/queue.c

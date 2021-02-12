@@ -1,27 +1,11 @@
-//
-// Created by Gareth on 29/12/2020.
-//
+#ifndef TASK_LCD_H
+#define TASK_LCD_H
 
-#ifndef PROJ_TASKS_H
-#define PROJ_TASKS_H
-
+#include "FreeRTOS.h"
+#include "task.h"
+#include "display.h"
 #include <stdint.h>
 
+void task_lcd(void *argument);
 
-
-/* Task 1
- * Blinks an LED at 2 Hz
- */
-void task1(void *argument);
-
-/* Task 2
- * Counter 1 Hz
- */
-void task2(void *argument);
-
-/* Task 3
- * LCD Display
- */
-void task3(void *arguments);
-
-#endif //PROJ_TASKS_H
+#endif //TASK_LCD_H

@@ -8,49 +8,25 @@
 #include "init.h"
 #include "FreeRTOS.h"
 #include "task.h"
-#include "proj_tasks.h"
+#include "task_lcd.h"
 #include <stdint.h>
 #include <stddef.h>
 
-
-void SysTick_Handler(void);
-void EXTI0_1_IRQHandler(void);
-void EXTI4_15_IRQHandler(void);
-
-
 int main(void)
 {
-
+    BaseType_t ret = 0;
     
     init_system();
+    
+    ret = xTaskCreate(task_lcd, "Task_LCD", 32, NULL, tskIDLE_PRIORITY + 2, NULL);
+    if (ret != pdPASS)
+    {
+        /* Task not created successfully */
+        while(1);
+    }
+    
+    vTaskStartScheduler();
     
     while(1);
 }
 
-void SysTick_Handler(void)
-{
-    
-}
-
-void EXTI0_1_IRQHandler(void)
-{
-    if (READ_BIT(EXTI->RPR1, EXTI_RPR1_RPIF0))
-    {
-        SET_BIT(EXTI->RPR1, EXTI_RPR1_RPIF0); //Clear interrupt flag
-        //TODO
-    }
-    if (READ_BIT(EXTI->FPR1, EXTI_FPR1_FPIF0))
-    {
-        SET_BIT(EXTI->FPR1, EXTI_FPR1_FPIF0); //Clear interrupt flag
-        //TODO
-    }
-}
-
-void EXTI4_15_IRQHandler(void)
-{
-    if (READ_BIT(EXTI->RPR1, EXTI_RPR1_RPIF15))
-    {
-        SET_BIT(EXTI->RPR1, EXTI_RPR1_RPIF15); //CLear interrupt flag
-        //TODO
-    }
-}

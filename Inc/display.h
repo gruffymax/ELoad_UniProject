@@ -7,10 +7,10 @@
 
 struct displayData_s
 {
-    char line1[20];
-    char line2[20];
-    char line3[20];
-    char line4[20];
+    char line1[21];
+    char line2[21];
+    char line3[21];
+    char line4[21];
 };
 
 void lcd_init(void);

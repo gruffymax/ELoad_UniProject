@@ -57,18 +57,23 @@ static void configureGPIOB(void)
     
     /* Start Button */
     MODIFY_REG(GPIOB->MODER, GPIO_MODER_MODE10, 0x0); // Input pin
+    MODIFY_REG(GPIOB->PUPDR, GPIO_PUPDR_PUPD10, GPIO_PUPDR_PUPD10_1); //Activate pull down
     
     /* Constant Current Mode */
     MODIFY_REG(GPIOB->MODER, GPIO_MODER_MODE11, 0x0); // Input pin
+    MODIFY_REG(GPIOB->PUPDR, GPIO_PUPDR_PUPD11, GPIO_PUPDR_PUPD11_1); //Activate pull down
     
     /* Constant Voltage Mode */
     MODIFY_REG(GPIOB->MODER, GPIO_MODER_MODE12, 0x0); // Input pin
+    MODIFY_REG(GPIOB->PUPDR, GPIO_PUPDR_PUPD12, GPIO_PUPDR_PUPD12_1); //Activate pull down
     
     /* Constant Resistance Mode */
     MODIFY_REG(GPIOB->MODER, GPIO_MODER_MODE13, 0x0); // Input pin
+    MODIFY_REG(GPIOB->PUPDR, GPIO_PUPDR_PUPD13, GPIO_PUPDR_PUPD13_1); //Activate pull down
     
     /* Constant Power Mode */
     MODIFY_REG(GPIOB->MODER, GPIO_MODER_MODE14, 0x0); // Input pin
+    MODIFY_REG(GPIOB->PUPDR, GPIO_PUPDR_PUPD14, GPIO_PUPDR_PUPD14_1); //Activate pull down
     
     /* Configure LCD control pins. Open drain, 5V tolerent */
     /* EN */
@@ -89,9 +94,12 @@ static void configureGPIOB(void)
     //MODIFY_REG(GPIOB->OSPEEDR, GPIO_OSPEEDR_OSPEED5, GPIO_OSPEEDR_OSPEED5_0);
     
     /* D4 */
+    /* TODO Set to PB10 as PB6 seems damaged*/
     MODIFY_REG(GPIOB->MODER, GPIO_MODER_MODE10, GPIO_MODER_MODE10_0);
     SET_BIT(GPIOB->OTYPER, GPIO_OTYPER_OT10); // Open Drain
-    //MODIFY_REG(GPIOB->OSPEEDR, GPIO_OSPEEDR_OSPEED10, GPIO_OSPEEDR_OSPEED10_0);
+    //MODIFY_REG(GPIOB->MODER, GPIO_MODER_MODE6, GPIO_MODER_MODE6_0);
+    //SET_BIT(GPIOB->OTYPER, GPIO_OTYPER_OT6); // Open Drain
+    //MODIFY_REG(GPIOB->OSPEEDR, GPIO_OSPEEDR_OSPEED6, GPIO_OSPEEDR_OSPEED6_0);
     
     /* D5 */
     MODIFY_REG(GPIOB->MODER, GPIO_MODER_MODE7, GPIO_MODER_MODE7_0);
