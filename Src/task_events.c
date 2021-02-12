@@ -24,7 +24,7 @@ void task_events(void * argument)
         check_button_cv();
         check_button_cr();
         check_button_cp();
-        xTaskDelay(10);
+        vTaskDelay(10);
     }
 }
 
@@ -82,7 +82,7 @@ static void check_button_cv(void)
     }
 }
 
-static void check_buttin_cr(void)
+static void check_button_cr(void)
 {
     if (get_event_button_cr() == SET)
     {

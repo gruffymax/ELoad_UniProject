@@ -14,7 +14,7 @@ void task_lcd(void *argument)
     while(1)
     {
         write_display(&displayData);
-        vTaskDelay(250);
+        vTaskDelay(10000);
     }
 
 }

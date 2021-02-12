@@ -28,19 +28,20 @@ set(SRC_FILES
         Src/st7066u_lcd.c
         Src/syscalls.c
         Src/task_lcd.c
+        Src/task_events.c
         FreeRTOS/Source/tasks.c
         FreeRTOS/Source/list.c
         FreeRTOS/Source/queue.c
         FreeRTOS/Source/timers.c
         FreeRTOS/Source/portable/MemMang/heap_3.c
         FreeRTOS/Source/portable/GCC/ARM_CM0/port.c
-        #~/Documents/SEGGER/Syscalls/SEGGER_RTT_Syscalls_GCC.c
-        #~/Documents/SEGGER/SEGGER_SYSVIEW_FreeRTOS.c
-        #~/Documents/SEGGER/SEGGER_SYSVIEW_Config_FreeRTOS.c
-        #~/Documents/SEGGER/SEGGER_SYSVIEW.c
-        #~/Documents/SEGGER/SEGGER_RTT.c
-        #~/Documents/SEGGER/SEGGER_RTT_printf.c
-        #~/Documents/SEGGER/Syscalls/SEGGER_RTT_Syscalls_GCC.c
+        segger/Syscalls/SEGGER_RTT_Syscalls_GCC.c
+        segger/SEGGER_SYSVIEW_FreeRTOS.c
+        segger/SEGGER_SYSVIEW_Config_FreeRTOS.c
+        segger/SEGGER_SYSVIEW.c
+        segger/SEGGER_RTT.c
+        segger/SEGGER_RTT_printf.c
+        segger/Syscalls/SEGGER_RTT_Syscalls_GCC.c
         
         
 )
@@ -53,7 +54,8 @@ target_include_directories(${EXECUTABLE} PRIVATE
     Drivers/CMSIS/Device/ST/STM32G0xx/Include
     FreeRTOS/Source/include
     FreeRTOS/Source/portable/GCC/ARM_CM0
-    #~/Documents/SEGGER
+    segger
+    segger/Syscalls
 )
 
 target_compile_definitions(${EXECUTABLE} PRIVATE

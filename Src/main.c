@@ -8,25 +8,43 @@
 #include "init.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "SEGGER_SYSVIEW.h"
 #include "task_lcd.h"
+#include "task_events.h"
 #include <stdint.h>
 #include <stddef.h>
 
+BaseType_t create_tasks(void);
+
 int main(void)
 {
-    BaseType_t ret = 0;
-    
     init_system();
-    
-    ret = xTaskCreate(task_lcd, "Task_LCD", 32, NULL, tskIDLE_PRIORITY + 2, NULL);
-    if (ret != pdPASS)
+    SEGGER_SYSVIEW_Conf();
+    if (create_tasks() == pdPASS)
     {
-        /* Task not created successfully */
-        while(1);
+        vTaskStartScheduler();
     }
-    
-    vTaskStartScheduler();
     
     while(1);
 }
 
+BaseType_t create_tasks(void)
+{
+    BaseType_t ret = 0;
+    
+    ret = xTaskCreate(task_lcd, "Task_LCD", 32, NULL, tskIDLE_PRIORITY + 1, NULL);
+    if (ret != pdPASS)
+    {
+        /* Task not created successfully */
+        return ret;
+    }
+    
+    ret = xTaskCreate(task_events, "Task_Events", 32, NULL, tskIDLE_PRIORITY + 2, NULL);
+    if (ret != pdPASS)
+    {
+        /* Task not created successfully */
+        return ret;
+    }
+    
+    return pdPASS;
+}
