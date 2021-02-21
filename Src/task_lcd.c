@@ -13,8 +13,9 @@ void task_lcd(void *argument)
     lcd_init();
     while(1)
     {
+        SEGGER_SYSVIEW_PrintfHost("Writing Display\n");
         write_display(&displayData);
-        vTaskDelay(10000);
+        vTaskDelay(250);
     }
 
 }

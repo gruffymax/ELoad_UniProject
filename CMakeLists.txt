@@ -35,15 +35,6 @@ set(SRC_FILES
         FreeRTOS/Source/timers.c
         FreeRTOS/Source/portable/MemMang/heap_3.c
         FreeRTOS/Source/portable/GCC/ARM_CM0/port.c
-        segger/Syscalls/SEGGER_RTT_Syscalls_GCC.c
-        segger/SEGGER_SYSVIEW_FreeRTOS.c
-        segger/SEGGER_SYSVIEW_Config_FreeRTOS.c
-        segger/SEGGER_SYSVIEW.c
-        segger/SEGGER_RTT.c
-        segger/SEGGER_RTT_printf.c
-        segger/Syscalls/SEGGER_RTT_Syscalls_GCC.c
-        
-        
 )
 
 add_executable(${EXECUTABLE} ${SRC_FILES})
@@ -54,8 +45,6 @@ target_include_directories(${EXECUTABLE} PRIVATE
     Drivers/CMSIS/Device/ST/STM32G0xx/Include
     FreeRTOS/Source/include
     FreeRTOS/Source/portable/GCC/ARM_CM0
-    segger
-    segger/Syscalls
 )
 
 target_compile_definitions(${EXECUTABLE} PRIVATE

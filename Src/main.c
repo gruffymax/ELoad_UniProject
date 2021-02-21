@@ -8,7 +8,6 @@
 #include "init.h"
 #include "FreeRTOS.h"
 #include "task.h"
-#include "SEGGER_SYSVIEW.h"
 #include "task_lcd.h"
 #include "task_events.h"
 #include <stdint.h>
@@ -19,7 +18,6 @@ BaseType_t create_tasks(void);
 int main(void)
 {
     init_system();
-    SEGGER_SYSVIEW_Conf();
     if (create_tasks() == pdPASS)
     {
         vTaskStartScheduler();
@@ -32,7 +30,7 @@ BaseType_t create_tasks(void)
 {
     BaseType_t ret = 0;
     
-    ret = xTaskCreate(task_lcd, "Task_LCD", 32, NULL, tskIDLE_PRIORITY + 1, NULL);
+    ret = xTaskCreate(task_lcd, "Task_LCD", 128, NULL, tskIDLE_PRIORITY + 1, NULL);
     if (ret != pdPASS)
     {
         /* Task not created successfully */
