@@ -10,6 +10,7 @@
 #include "task.h"
 #include "task_lcd.h"
 #include "task_events.h"
+#include "task_dac.h"
 #include <stdint.h>
 #include <stddef.h>
 
@@ -19,6 +20,9 @@ BaseType_t create_tasks(void);
 int main(void)
 {
     init_system();
+    
+    /* Create Mutexes */
+    mutex_DAC_value = xSemaphoreCreateMutex();
     if (create_tasks() == pdPASS)
     {
         vTaskStartScheduler();
