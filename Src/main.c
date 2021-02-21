@@ -15,6 +15,7 @@
 
 BaseType_t create_tasks(void);
 
+
 int main(void)
 {
     init_system();
@@ -30,6 +31,13 @@ BaseType_t create_tasks(void)
 {
     BaseType_t ret = 0;
     
+    ret = xTaskCreate(task_control, "Task_Control", 128, NULL, tskIDLE_PRIORITY + 1, &control_task_handle);
+    if (ret != pdPASS)
+    {
+        /* Task not created successfully */
+        return ret;
+    }
+    
     ret = xTaskCreate(task_lcd, "Task_LCD", 128, NULL, tskIDLE_PRIORITY + 1, NULL);
     if (ret != pdPASS)
     {
@@ -38,6 +46,13 @@ BaseType_t create_tasks(void)
     }
     
     ret = xTaskCreate(task_events, "Task_Events", 32, NULL, tskIDLE_PRIORITY + 2, NULL);
+    if (ret != pdPASS)
+    {
+        /* Task not created successfully */
+        return ret;
+    }
+    
+    ret = xTaskCreate(task_dac, "Task_DAC", 32, NULL, taskIDLE_PRIORITY + 2, NULL);
     if (ret != pdPASS)
     {
         /* Task not created successfully */
