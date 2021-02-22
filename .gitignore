@@ -3,6 +3,7 @@ cmake-build-debug/
 CMakeFiles/
 .vscode/
 Testing/
+tests/
 .idea/
 CMakeFiles/CMakeError.log
 Makefile

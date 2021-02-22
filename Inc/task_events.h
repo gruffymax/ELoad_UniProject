@@ -1,6 +1,9 @@
 #ifndef TASK_EVENTS_H
 #define TASK_EVENTS_H
 
+#include "FreeRTOS.h"
+#include "task.h"
+
 #define BUTTON_CP_MASK      0x00000080
 #define BUTTON_CR_MASK      0x00000040
 #define BUTTON_CV_MASK      0x00000020
@@ -10,7 +13,7 @@
 #define CCW_EVENT_MASK      0x00000002
 #define CW_EVENT_MASK       0x00000001
 
-TaskHandle_t control_task_handle = NULL;
+extern TaskHandle_t control_task_handle;
 
 void task_events(void *arguments);
 

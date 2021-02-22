@@ -1,8 +1,7 @@
 #include "task_events.h"
-#include "FreeRTOS.h"
-#include "task.h"
 #include "interrupts.h"
 
+TaskHandle_t control_task_handle = NULL;
 
 /* Static Variables */
 static uint32_t event_flags = 0; // 32 bit notification value

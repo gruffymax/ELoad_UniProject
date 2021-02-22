@@ -8,9 +8,12 @@
 #include "init.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "semphr.h"
+#include "queue.h"
 #include "task_lcd.h"
 #include "task_events.h"
 #include "task_dac.h"
+#include "task_control.h"
 #include <stdint.h>
 #include <stddef.h>
 
@@ -56,7 +59,7 @@ BaseType_t create_tasks(void)
         return ret;
     }
     
-    ret = xTaskCreate(task_dac, "Task_DAC", 32, NULL, taskIDLE_PRIORITY + 2, NULL);
+    ret = xTaskCreate(task_dac, "Task_DAC", 32, NULL, tskIDLE_PRIORITY + 2, NULL);
     if (ret != pdPASS)
     {
         /* Task not created successfully */
