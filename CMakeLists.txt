@@ -29,6 +29,7 @@ set(SRC_FILES
         Src/syscalls.c
         Src/task_ui.c
         Src/task_dac.c
+        Src/ui_state.c
         FreeRTOS/Source/tasks.c
         FreeRTOS/Source/list.c
         FreeRTOS/Source/queue.c

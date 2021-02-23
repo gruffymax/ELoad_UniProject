@@ -10,7 +10,7 @@ set(EXECUTABLE ${PROJECT_NAME})
 set(SRC_FILES
         ~/Unity/src/unity.c
         test_task_ui.c
-        ../Src/task_ui.c
+        ../Src/ui_state.c
 )
 
 add_executable(${EXECUTABLE} ${SRC_FILES})
