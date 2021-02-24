@@ -10,8 +10,10 @@ struct ui_data_t
 {
     uint32_t src_voltage;
     uint32_t src_current;
-}
+};
 
+void initialise_display(void);
 uint32_t evaluate_ui(struct ui_data_t *ui_data);
+void generate_display(void);
 
 #endif //UI_STATE_H

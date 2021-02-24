@@ -1,8 +1,10 @@
 #include "task_ui.h"
 #include "ui_state.h"
 
+static uint32_t dac_setting = 0;
 void task_ui(void *argument)
 {
+    initialise_display();
     while(1)
     {
         // TODO 
@@ -18,6 +20,9 @@ void task_ui(void *argument)
         struct ui_data_t ui_data;
         ui_data.src_voltage = 0;  //TODO
         ui_data.src_current = 0;  //TODO
+        dac_setting = evaluate_ui(&ui_data);
+        generate_display();
+        vTaskDelay(100);
         
     }
 

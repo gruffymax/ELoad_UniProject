@@ -17,9 +17,19 @@
 
 void lcd_init(void)
 {
+    us_delay(150000);
     lcd_initialise(&lcd_interface);
 }
 
+void write_char_cursor(char value, char pos)
+{
+    send_char_pos(value+48, pos | 0x80);
+}
+
+void set_cursor(char pos)
+{
+    set_instruction(pos | 0x80);
+}
 void write_display(struct displayData_s *displayData)
 {
     send_line1(displayData->line1);

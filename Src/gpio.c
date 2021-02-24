@@ -124,5 +124,6 @@ static void configureGPIOD(void)
     /* Configure Rotary Encoder */
     /* Channel A */
     MODIFY_REG(GPIOD->MODER, GPIO_MODER_MODE0, 0x0); // Input mode
+    MODIFY_REG(GPIOD->MODER, GPIO_MODER_MODE1, 0x0); // Input mode
 
 }

@@ -191,12 +191,70 @@ static void send_char(char letter)
 	}
 }
 
+void send_char_pos(char letter, char pos)
+{
+    char value = letter >> 4;
+    uint8_t i = 0;
+    
+    set_instruction(pos);
+    
+    p_st7066u_iface1->Set_LCD_RW_Pin(0); 	//RW=LOW
+    p_st7066u_iface1->Set_LCD_RS_Pin(1);	    //RS=HIGH
+
+
+	while (i < 2)
+	{
+
+		//Clear all data lines
+        p_st7066u_iface1->Set_LCD_D4_Pin(0);
+        p_st7066u_iface1->Set_LCD_D5_Pin(0);
+        p_st7066u_iface1->Set_LCD_D6_Pin(0);
+        p_st7066u_iface1->Set_LCD_D7_Pin(0);
+
+        p_st7066u_iface1->Set_LCD_EN_Pin(1);	//EN=HIGH
+        p_st7066u_iface1->us_delay(5);
+
+		if (value & 0x01)
+		{
+            p_st7066u_iface1->Set_LCD_D4_Pin(1);
+		}
+		value = value >> 1;
+		if (value & 0x01)
+		{
+            p_st7066u_iface1->Set_LCD_D5_Pin(1);
+		}
+		value = value >> 1;
+		if (value & 0x01)
+		{
+            p_st7066u_iface1->Set_LCD_D6_Pin(1);
+		}
+		value = value >> 1;
+		if (value & 0x01)
+		{
+            p_st7066u_iface1->Set_LCD_D7_Pin(1);
+		}
+
+		// Latch 4 bits of instruction code
+        p_st7066u_iface1->Set_LCD_EN_Pin(0);	//EN=LOW
+        p_st7066u_iface1->us_delay(50);
+
+		value = letter;
+		i++;
+	}
+	while (check_busy_flag())
+	{
+		//wait until ready
+	}
+	
+	set_instruction(pos);
+}
+
 void send_line1(char *line1)
 {
 	uint8_t msg_len = strlen(line1);
 	uint8_t i = 0;
 
-	set_instruction(0x01); //Clear Display Instruction
+	set_instruction(0x80); //Set DDRAM ADDRESS 0x00 Line 1
 
 	for (i=0; i<msg_len; i++) {
 		send_char(line1[i]);

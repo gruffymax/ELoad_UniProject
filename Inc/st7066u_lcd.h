@@ -103,6 +103,7 @@ void send_line3(char * line3);
  */
 void send_line4(char * line4);
 
+void send_char_pos(char letter, char pos);
 #ifdef __cplusplus
 }
 #endif

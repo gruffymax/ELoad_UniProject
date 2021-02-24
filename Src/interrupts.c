@@ -123,7 +123,8 @@ static void check_encoder_ch_B(uint8_t state_of_A)
 {
     /* If both channels are in the same state, trigger a CCW event,
      * else trigger a CW event */
-    if (READ_BIT(GPIOD->IDR, GPIO_IDR_ID0) == state_of_A)
+    uint32_t read_pd1 = READ_BIT(GPIOD->IDR, GPIO_IDR_ID1) >> 1;
+    if (read_pd1 == state_of_A)
     {
         /* CCW event */
         event_ccw = SET;

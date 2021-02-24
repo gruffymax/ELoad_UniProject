@@ -3,6 +3,7 @@
 
 #include "FreeRTOS.h"
 #include "task.h"
+#include <stdint.h>
 
 void task_ui(void *argument);
 

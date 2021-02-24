@@ -1,5 +1,4 @@
 #include "task_dac.h"
-#include "task_control.h"
 #include "dac.h"
 
 
@@ -14,7 +13,7 @@ void task_dac(void *arguments)
         if (xSemaphoreTake(mutex_DAC_value, 10) == pdPASS)
         {
             // Start critical section
-            dac_value = ctrl_dac_value;
+            dac_value = 0; //TODO
             // End critical section
             xSemaphoreGive(mutex_DAC_value);
         }
