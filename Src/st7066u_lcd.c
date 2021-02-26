@@ -12,7 +12,6 @@
  * @brief Append a single character to the current LCD display buffer
  * @param[in] letter: The character to apped to the LCD display buffer
  */
-static void send_char(char letter);
 
 /*!
  * @brief Check if LCD busy
@@ -137,7 +136,7 @@ void set_instruction_wakeup(uint8_t code)
 	p_st7066u_iface1->us_delay(160);
 }
 
-static void send_char(char letter)
+void send_char(char letter)
 {
     char value = letter >> 4;
     uint8_t i = 0;

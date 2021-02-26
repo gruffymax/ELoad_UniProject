@@ -21,15 +21,16 @@ void lcd_init(void)
     lcd_initialise(&lcd_interface);
 }
 
-void write_char_cursor(char value, char pos)
+void write_char(char character)
 {
-    send_char_pos(value+48, pos | 0x80);
+    send_char(character);
 }
 
 void set_cursor(char pos)
 {
     set_instruction(pos | 0x80);
 }
+
 void write_display(struct displayData_s *displayData)
 {
     send_line1(displayData->line1);
@@ -41,11 +42,11 @@ void set_lcd_rw(uint8_t state)
 {
     if (state)
     {
-        SET_BIT(GPIOD->BSRR, GPIO_BSRR_BS3);
+        SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS4);
     }
     else
     {
-        SET_BIT(GPIOD->BSRR, GPIO_BSRR_BR3);
+        SET_BIT(GPIOB->BSRR, GPIO_BSRR_BR4);
     }
 }
 
@@ -77,11 +78,11 @@ void set_lcd_d4(uint8_t state)
 {
     if (state)
     {
-        SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS10);
+        SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS6);
     }
     else
     {
-        SET_BIT(GPIOB->BSRR, GPIO_BSRR_BR10);
+        SET_BIT(GPIOB->BSRR, GPIO_BSRR_BR6);
     }
 }
 
@@ -124,11 +125,11 @@ void set_d4_mode(uint8_t mode)
 {
     if (mode)
     {
-        MODIFY_REG(GPIOB->MODER, GPIO_MODER_MODE10, 0x0);
+        MODIFY_REG(GPIOB->MODER, GPIO_MODER_MODE6, 0x0);
     }
     else
     {
-        MODIFY_REG(GPIOB->MODER, GPIO_MODER_MODE10, GPIO_MODER_MODE10_0);
+        MODIFY_REG(GPIOB->MODER, GPIO_MODER_MODE6, GPIO_MODER_MODE6_0);
     }
 }
 

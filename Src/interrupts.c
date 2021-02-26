@@ -29,13 +29,12 @@ void init_interrupts(void)
     /* Enable interrupt for Rotary encoder Channel A */
     MODIFY_REG(EXTI->EXTICR[0], EXTI_EXTICR1_EXTI0, EXTI_EXTICR1_EXTI0_0 | EXTI_EXTICR1_EXTI0_1 ); //Set to Pin PD0
     SET_BIT(EXTI->RTSR1, EXTI_RTSR1_RT0); //Enable rising edge detection
-    SET_BIT(EXTI->FTSR1, EXTI_FTSR1_FT0); //Enable falling edge detection
     SET_BIT(EXTI->IMR1, EXTI_IMR1_IM0); //Unmask interrupt
     
     /* Enable interrupt for Start Button */
-    //MODIFY_REG(EXTI->EXTICR[2], EXTI_EXTICR3_EXTI10, EXTI_EXTICR3_EXTI10_0); //Set to Pin PB10
-    //SET_BIT(EXTI->RTSR1, EXTI_RTSR1_RT10); //Enable rising edge detection
-    //SET_BIT(EXTI->IMR1, EXTI_IMR1_IM10); //Unmask interrupt
+    MODIFY_REG(EXTI->EXTICR[2], EXTI_EXTICR3_EXTI10, EXTI_EXTICR3_EXTI10_0); //Set to Pin PB10
+    SET_BIT(EXTI->RTSR1, EXTI_RTSR1_RT10); //Enable rising edge detection
+    SET_BIT(EXTI->IMR1, EXTI_IMR1_IM10); //Unmask interrupt
     
     /* Enable interrupt for CC Button */
     MODIFY_REG(EXTI->EXTICR[2], EXTI_EXTICR3_EXTI11, EXTI_EXTICR3_EXTI11_0); //Set to Pin PB11
@@ -65,12 +64,6 @@ void EXTI0_1_IRQHandler(void)
     {
         SET_BIT(EXTI->RPR1, EXTI_RPR1_RPIF0); //Clear interrupt flag
         check_encoder_ch_B(1);
-    }
-    /* Rotary encoder channel A falling edge interrupt */
-    if (READ_BIT(EXTI->FPR1, EXTI_FPR1_FPIF0))
-    {
-        SET_BIT(EXTI->FPR1, EXTI_FPR1_FPIF0); //Clear interrupt flag
-        check_encoder_ch_B(0);
     }
 }
 

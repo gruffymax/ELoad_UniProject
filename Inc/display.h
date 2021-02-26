@@ -15,7 +15,7 @@ struct displayData_s
 
 void lcd_init(void);
 void write_display(struct displayData_s *displayData);
-void write_char_cursor(char value, char pos);
+void write_char(char character);
 void set_cursor(char pos);
 
 void set_lcd_rw(uint8_t state);

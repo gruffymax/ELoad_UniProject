@@ -128,6 +128,8 @@ static void increment_cursor_pos(void)
 static void update_lcd_char(void)
 {
     char pos = 0;
+    char character = '0';
+    
     if (current_value == 0)
     {
         pos = 0x55;
@@ -137,6 +139,10 @@ static void update_lcd_char(void)
         pos = 0x5E;
     }
     pos = pos + cursor_pos;
+    set_cursor(pos); //Set cursor position
     
-    write_char_cursor(setting_values[current_value][cursor_pos], pos);
+    character = setting_values[current_value][cursor_pos] + 48;
+    write_char(character); // Write the character, cursor will auto increment
+    
+    set_cursor(pos); // Return the cursor to the current position
 }
