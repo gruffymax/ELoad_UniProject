@@ -1,8 +1,9 @@
 #include "task_dac.h"
 #include "dac.h"
+#include "ui_state.h"
 
 
-uint32_t dac_value = 0;
+uint32_t dac_value = 0; 
 SemaphoreHandle_t mutex_DAC_value = NULL;
 
 void task_dac(void *arguments)
@@ -13,7 +14,7 @@ void task_dac(void *arguments)
         if (xSemaphoreTake(mutex_DAC_value, 10) == pdPASS)
         {
             // Start critical section
-            dac_value = 0; //TODO
+            dac_value = get_dac_setting();
             // End critical section
             xSemaphoreGive(mutex_DAC_value);
         }

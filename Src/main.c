@@ -8,8 +8,8 @@
 #include "init.h"
 #include "FreeRTOS.h"
 #include "task.h"
-#include "semphr.h"
 #include "queue.h"
+#include "el_sem.h"
 #include "task_ui.h"
 #include "task_dac.h"
 #include <stdint.h>
@@ -23,7 +23,6 @@ int main(void)
     init_system();
     
     /* Create Mutexes */
-    mutex_DAC_value = xSemaphoreCreateMutex();
     if (create_tasks() == pdPASS)
     {
         vTaskStartScheduler();

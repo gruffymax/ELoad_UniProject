@@ -8,7 +8,6 @@ void task_ui(void *argument)
     while(1)
     {
         // TODO 
-        // Get event notification
         // Get Settings (Mutex)
         // Get Data (Mutex)
         // Set system state
@@ -26,4 +25,9 @@ void task_ui(void *argument)
         
     }
 
+}
+
+uint32_t get_dac_setting(void)
+{
+    return dac_setting;
 }

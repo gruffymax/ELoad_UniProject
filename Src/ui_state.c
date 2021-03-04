@@ -34,6 +34,7 @@ void initialise_display(void)
     strcpy(displayData.line3, " 0000mA   00000mOhm");
     strcpy(displayData.line4, " 0000mA   0000mA");
     write_display(&displayData);
+    set_cursor(0x55);
 }
 
 uint32_t evaluate_ui(struct ui_data_t *ui_data)
@@ -62,7 +63,8 @@ uint32_t evaluate_ui(struct ui_data_t *ui_data)
         update_lcd_char();
     }
     
-    return 0; //TODO
+    uint32_t dac_value = (setting_values[0][0] * 1000) + (setting_values[0][1] * 100) + (setting_values[0][2] * 10) + setting_values[0][3];
+    return dac_value * 2; //TODO
 }
 
 void generate_display(void)

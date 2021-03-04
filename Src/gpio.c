@@ -51,9 +51,11 @@ static void configureGPIOB(void)
     /* Configure LED control pins */
     /* RED_LED */
     MODIFY_REG(GPIOB->MODER, GPIO_MODER_MODE1, GPIO_MODER_MODE1_0); // Output pin
+    SET_BIT(GPIOB->BSRR, GPIO_BSRR_BR1); // Turn off LED
     
     /* GREEN LED */
     MODIFY_REG(GPIOB->MODER, GPIO_MODER_MODE2, GPIO_MODER_MODE2_0); // Output pin
+    SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS2); // Turn on LED
     
     /* Start Button */
     MODIFY_REG(GPIOB->MODER, GPIO_MODER_MODE10, 0x0); // Input pin

@@ -6,5 +6,6 @@
 #include <stdint.h>
 
 void task_ui(void *argument);
+uint32_t get_dac_setting(void);
 
 #endif //TASK_UI_H
