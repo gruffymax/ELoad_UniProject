@@ -1,5 +1,6 @@
 #include "task_ui.h"
 #include "ui_state.h"
+#include "el_sem.h"
 
 static uint32_t dac_setting = 0;
 void task_ui(void *argument)
@@ -17,12 +18,19 @@ void task_ui(void *argument)
         // Task delay 100
         
         struct ui_data_t ui_data;
-        ui_data.src_voltage = 0;  //TODO
-        ui_data.src_current = 0;  //TODO
+        
+        /* Start critical section */
+        if (take_data_mutex())
+        {
+            ui_data.src_voltage = 0;  //TODO
+            ui_data.src_current = 0;  //TODO
+            give_data_mutex(); // Return data mutex
+        }
+        /* End of critial section */
+        
         dac_setting = evaluate_ui(&ui_data);
         generate_display();
         vTaskDelay(100);
-        
     }
 
 }

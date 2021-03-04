@@ -21,8 +21,8 @@ BaseType_t create_tasks(void);
 int main(void)
 {
     init_system();
+    init_mutexes();
     
-    /* Create Mutexes */
     if (create_tasks() == pdPASS)
     {
         vTaskStartScheduler();
