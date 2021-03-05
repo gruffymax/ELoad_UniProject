@@ -14,6 +14,6 @@ struct ui_data_t
 
 void initialise_display(void);
 uint32_t evaluate_ui(struct ui_data_t *ui_data);
-void generate_display(void);
+void generate_display(struct ui_data_t *ui_data);
 
 #endif //UI_STATE_H

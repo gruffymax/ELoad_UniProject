@@ -21,7 +21,6 @@ void init_system(void)
     init_adc();
     //init_uart();
     //init_timers();
-    //init_dac();
 }
 
 

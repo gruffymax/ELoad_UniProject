@@ -9,7 +9,7 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "queue.h"
-#include "el_sem.h"
+//#include "el_sem.h"
 #include "task_ui.h"
 #include "task_dac.h"
 #include <stdint.h>
@@ -21,7 +21,7 @@ BaseType_t create_tasks(void);
 int main(void)
 {
     init_system();
-    init_mutexes();
+    //init_mutexes();
     
     if (create_tasks() == pdPASS)
     {
