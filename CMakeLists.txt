@@ -31,6 +31,7 @@ set(SRC_FILES
         Src/task_dac.c
         Src/ui_state.c
         Src/el_sem.c
+	Src/adc.c
         FreeRTOS/Source/tasks.c
         FreeRTOS/Source/list.c
         FreeRTOS/Source/queue.c

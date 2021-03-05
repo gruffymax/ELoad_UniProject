@@ -15,7 +15,6 @@ void task_ui(void *argument)
         // Set DAC setting
         // Generate display output
         // Update LCD
-        // Task delay 100
         
         struct ui_data_t ui_data;
         
