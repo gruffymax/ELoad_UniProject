@@ -82,6 +82,14 @@ uint32_t evaluate_ui(struct ui_data_t *ui_data)
     {
         clear_event_button_start(); // CLear the event flag
         run_state = !run_state; //Toggle run mode_state
+        if (run_state)
+        {
+            SET_BIT(GPIOB->BSRR, GPIO_BSRR_BS1); // Turn on LED
+        }
+        else
+        {
+            SET_BIT(GPIOB->BSRR, GPIO_BSRR_BR1); // Turn off LED
+        }
     }
     
     if (get_event_button_cc())

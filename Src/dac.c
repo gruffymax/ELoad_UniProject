@@ -2,9 +2,10 @@
 
 void init_dac(void)
 {
+    MODIFY_REG(DAC->MCR, DAC_MCR_MODE1, DAC_MCR_MODE1_1); // Buffer disabled
     SET_BIT(DAC->CR, DAC_CR_EN1); // Enable DAC channel 1
     CLEAR_BIT(DAC->CR, DAC_CR_TEN1); // Enable software triggering
-    write_dac1_value(0x00000000); // Set DAC output to 1V;
+    write_dac1_value(0x00000000); // Set DAC output to 0V;
 }
 
 void write_dac1_value(uint32_t value)

@@ -2,6 +2,7 @@
 #define UI_STATE_H
 
 #include <stdint.h>
+#include "stm32g0xx.h"
 
 #define VALUE0_POS 0x00
 #define VALUE1_POS 0x40
