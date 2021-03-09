@@ -52,6 +52,24 @@ BaseType_t create_tasks(void)
     }
     
     return pdPASS;
+    
+    ret = xTaskCreate(task_lcd, "Task_LCD", 64, NULL, tskIDLE_PRIORITY + 1, NULL);
+    if (ret != pdPASS)
+    {
+        /* Task not created successfully */
+        return ret;
+    }
+    
+    return pdPASS;
+    
+    ret = xTaskCreate(task_control, "Task_Control", 128, NULL, tskIDLE_PRIORITY + 1, NULL);
+    if (ret != pdPASS)
+    {
+        /* Task not created successfully */
+        return ret;
+    }
+    
+    return pdPASS;
 }
 
 void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName)
