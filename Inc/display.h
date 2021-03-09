@@ -5,6 +5,11 @@
 #include "stm32g0xx.h"
 #include "st7066u_lcd.h"
 
+#define LINE1 0x00
+#define LINE2 0x40
+#define LINE3 0x14
+#define LINE4 0x54
+
 struct displayData_s
 {
     char line1[21];
@@ -19,6 +24,7 @@ void write_char(char character);
 void set_cursor(char pos);
 void show_cursor(void);
 void hide_cursor(void);
+void clear_line4(void);
 
 void set_lcd_rw(uint8_t state);
 void set_lcd_rs(uint8_t state);

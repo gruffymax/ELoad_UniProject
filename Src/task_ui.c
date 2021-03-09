@@ -9,7 +9,9 @@ static void increase_value(void);
 static void decrease_value(void);
 static void change_setting_value(uint8_t dec);
 static void increment_cursor_pos(void);
-
+static uint8_t min_cursor_pos(void);
+static void reset_setting_values(void);
+void calculate_setting_value(void);
 
 SemaphoreHandle_t uistate_access_semphr = NULL;
 struct UI_State_s ui_state =
@@ -22,6 +24,7 @@ struct UI_State_s ui_state =
     0,
     0,
     0,
+    1,
     {{0},{0}}
 };
 
@@ -61,6 +64,7 @@ uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
         if (ui_state.run_state == 0)
         {
             increase_value(); // Increase current value digit
+            calculate_setting_value();
             vTaskResume(*task_lcd_handle);
         }
     }
@@ -72,6 +76,7 @@ uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
         if (ui_state.run_state == 0)
         {
             decrease_value();  // Decrease current value digit
+            calculate_setting_value();
             vTaskResume(*task_lcd_handle);
         }
     }
@@ -106,12 +111,66 @@ uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
         }
     }
     
+    /* CC button */
     if (get_event_button_cc())
     {
         clear_event_button_cc();
         if (ui_state.run_state == 0 && ui_state.mode == mode_cc)
         {
             ui_state.selected_set_point = !ui_state.selected_set_point;
+            ui_state.cursor_pos = 1;
+            vTaskResume(*task_lcd_handle);
+        }
+        else if (ui_state.run_state == 0 && ui_state.mode != mode_cc)
+        {
+            ui_state.mode = mode_cc;
+            ui_state.cursor_pos = 1;
+            ui_state.selected_set_point = 0;
+            reset_setting_values();
+            vTaskResume(*task_lcd_handle);
+        }
+        
+    }
+    
+    /* CV button */
+    if (get_event_button_cv())
+    {
+        clear_event_button_cv();
+        if (ui_state.run_state == 0 && ui_state.mode != mode_cv)
+        {
+            ui_state.mode = mode_cv;
+            ui_state.cursor_pos = 0;
+            ui_state.selected_set_point = 0;
+            reset_setting_values();
+            vTaskResume(*task_lcd_handle);
+        }
+    }
+    
+    /* CP button */
+    if (get_event_button_cp())
+    {
+        clear_event_button_cp();
+        if (ui_state.run_state == 0 && ui_state.mode != mode_cp)
+        {
+            ui_state.mode = mode_cp;
+            ui_state.cursor_pos = 0;
+            ui_state.selected_set_point = 0;
+            reset_setting_values();
+            vTaskResume(*task_lcd_handle);
+        }
+    }
+    
+    /* CR button */
+    if (get_event_button_cr())
+    {
+        clear_event_button_cr();
+        if (ui_state.run_state == 0 && ui_state.mode != mode_cr)
+        {
+            ui_state.mode = mode_cr;
+            ui_state.cursor_pos = 0;
+            ui_state.selected_set_point = 0;
+            reset_setting_values();
+            vTaskResume(*task_lcd_handle);
         }
     }
     return 0;
@@ -162,12 +221,65 @@ static void change_setting_value(uint8_t dec)
 
 static void increment_cursor_pos(void)
 {
-    if (ui_state.cursor_pos == 3)
+    uint8_t min = min_cursor_pos();
+    if (ui_state.cursor_pos >= 4)
     {
-        ui_state.cursor_pos = 0;
+        ui_state.cursor_pos = min;
     }
     else
     {
         ui_state.cursor_pos++;
+    }
+}
+
+static uint8_t min_cursor_pos(void)
+{
+    if (ui_state.mode == mode_cc)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+static void reset_setting_values(void)
+{
+    uint8_t i=0, j=0;
+    for (i=0; i<2; i++)
+    {
+        for (j=0; j<5; j++)
+        {
+            ui_state.setting_values[i][j] = 0;
+        }
+    }
+}
+
+void calculate_setting_value(void)
+{
+    uint32_t setting0 = (ui_state.setting_values[0][0] * 10000) + (ui_state.setting_values[0][1] * 1000) + (ui_state.setting_values[0][2] * 100) + (ui_state.setting_values[0][3] * 10) + ui_state.setting_values[0][4];
+    uint32_t setting1 = (ui_state.setting_values[1][0] * 10000) + (ui_state.setting_values[1][1] * 1000) + (ui_state.setting_values[1][2] * 100) + (ui_state.setting_values[1][3] * 10) + ui_state.setting_values[1][4];
+    switch (ui_state.mode)
+    {
+        case mode_cc:
+            ui_state.setting_current0 = setting0;
+            ui_state.setting_current1 = setting1;
+            break;
+            
+        case mode_cv:
+            ui_state.setting_voltage = setting0;
+            break;
+            
+        case mode_cp:
+            ui_state.setting_power = setting0;
+            break;
+            
+        case mode_cr:
+            ui_state.setting_resistance = setting0;
+            break;
+            
+        default:
+            break;
     }
 }

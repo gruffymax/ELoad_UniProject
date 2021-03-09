@@ -40,6 +40,18 @@ void hide_cursor(void)
     set_instruction(0x0C); // Display ON, Cursor OFF, Blink OFF
 }
 
+void clear_line4(void)
+{
+    hide_cursor();
+    set_cursor(LINE4);
+    uint8_t i;
+    for (i=0; i<20; i++)
+    {
+        send_char(' ');
+    }
+    set_cursor(LINE4);
+}
+
 void write_display(struct displayData_s *displayData)
 {
     send_line1(displayData->line1);
