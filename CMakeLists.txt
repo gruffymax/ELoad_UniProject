@@ -29,12 +29,12 @@ set(SRC_FILES
         Src/syscalls.c
         Src/task_ui.c
         Src/task_dac.c
-	Src/adc.c
+        Src/adc.c
         FreeRTOS/Source/tasks.c
         FreeRTOS/Source/list.c
         FreeRTOS/Source/queue.c
         FreeRTOS/Source/timers.c
-        FreeRTOS/Source/portable/MemMang/heap_3.c
+        FreeRTOS/Source/portable/MemMang/heap_4.c
         FreeRTOS/Source/portable/GCC/ARM_CM0/port.c
 )
 

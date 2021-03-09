@@ -9,14 +9,15 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "queue.h"
-//#include "el_sem.h"
 #include "task_ui.h"
 #include "task_dac.h"
+#include "task_lcd.h"
+#include "task_control.h"
+
 #include <stdint.h>
 #include <stddef.h>
 
 BaseType_t create_tasks(void);
-
 
 int main(void)
 {
@@ -43,7 +44,7 @@ BaseType_t create_tasks(void)
     }
     
     
-    ret = xTaskCreate(task_dac, "Task_DAC", 32, NULL, tskIDLE_PRIORITY + 1, NULL);
+    ret = xTaskCreate(task_dac, "Task_DAC", 64, NULL, tskIDLE_PRIORITY + 1, NULL);
     if (ret != pdPASS)
     {
         /* Task not created successfully */
@@ -51,4 +52,14 @@ BaseType_t create_tasks(void)
     }
     
     return pdPASS;
+}
+
+void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName)
+{
+    TaskHandle_t bad_task_handle = xTask;     // this seems to give me the crashed task handle
+    char *bad_task_name = pcTaskName;     // this seems to give me a pointer to the name of the crashed task
+    while(1)
+    {
+        // Stack overflow
+    }
 }

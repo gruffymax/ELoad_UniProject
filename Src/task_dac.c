@@ -1,16 +1,28 @@
 #include "task_dac.h"
 #include "dac.h"
-#include "task_ui.h"
+#include "shared.h"
+#include "semphr.h"
 
 
-uint32_t dac_value = 0; 
+static uint32_t local_dac_value = 0; 
+SemaphoreHandle_t dac_access_semphr = NULL;
 
 void task_dac(void *arguments)
 {
+    dac_access_semphr = xSemaphoreCreateMutex();
+    uint32_t dac_setting = 0x7D0;
+    
     while(1)
     {
-        dac_value = get_dac_setting();
-        write_dac1_value(dac_value);
+        /* Critial block */
+        while(xSemaphoreTake(dac_access_semphr, 0) != pdTRUE)
+        {
+            //Wait until semaphore free
+        }
+        local_dac_value = dac_setting;
+        xSemaphoreGive(dac_access_semphr);
+        
+        write_dac1_value(local_dac_value);
         vTaskDelay(100);
     }
 }

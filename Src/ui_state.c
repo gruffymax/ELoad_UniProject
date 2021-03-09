@@ -11,20 +11,6 @@ static void change_setting_value(uint8_t dec);
 static void increment_cursor_pos(void);
 static void update_lcd_char(void);
 
-/* Static Variables */
-enum mode_e{mode_cc, mode_cv, mode_cr, mode_cp};
-static enum mode_e mode_state = mode_cc;
-
-static uint8_t run_state = 0;
-static uint16_t setting_current = 0;
-static uint16_t setting_voltage = 0;
-static uint16_t setting_power = 0;
-static uint16_t setting_resistance = 0;
-
-static uint8_t selected_set_point = 0; 
-static uint8_t cursor_pos = 0;
-
-static uint8_t setting_values[2][4] = {0}; 
 
 void initialise_display(void)
 {
