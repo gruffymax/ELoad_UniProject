@@ -1,6 +1,5 @@
 #include "task_ui.h"
 #include "ui_state.h"
-//#include "el_sem.h"
 #include "adc.h"
 
 static uint32_t dac_setting = 0;
