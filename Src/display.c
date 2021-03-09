@@ -31,6 +31,15 @@ void set_cursor(char pos)
     set_instruction(pos | 0x80);
 }
 
+void show_cursor(void)
+{
+    set_instruction(0x0E); // Display ON, Cursor ON, Blink OFF
+}
+void hide_cursor(void)
+{
+    set_instruction(0x0C); // Display ON, Cursor OFF, Blink OFF
+}
+
 void write_display(struct displayData_s *displayData)
 {
     send_line1(displayData->line1);

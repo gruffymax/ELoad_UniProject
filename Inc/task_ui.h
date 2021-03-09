@@ -5,7 +5,7 @@
 #include "task.h"
 #include <stdint.h>
 
-void task_ui(void *argument);
-uint32_t evaluate_ui(void);
+void task_ui(void *task_lcd_handle);
+uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle);
 
 #endif //TASK_UI_H

@@ -17,6 +17,8 @@ void lcd_init(void);
 void write_display(struct displayData_s *displayData);
 void write_char(char character);
 void set_cursor(char pos);
+void show_cursor(void);
+void hide_cursor(void);
 
 void set_lcd_rw(uint8_t state);
 void set_lcd_rs(uint8_t state);

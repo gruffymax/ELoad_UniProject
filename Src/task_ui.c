@@ -25,7 +25,7 @@ struct UI_State_s ui_state =
     {{0},{0}}
 };
 
-void task_ui(void *argument)
+void task_ui(void *task_lcd_handle)
 {
     //initialise_display();
     uistate_access_semphr = xSemaphoreCreateMutex();
@@ -43,15 +43,16 @@ void task_ui(void *argument)
         /* Start critical section */
         while(xSemaphoreTake(uistate_access_semphr, 0) != pdTRUE)
         {
-            evaluate_ui();
+            
         }
+        evaluate_ui(task_lcd_handle);
         xSemaphoreGive(uistate_access_semphr); // Return semaphore
         vTaskDelay(100);
     }
 
 }
 
-uint32_t evaluate_ui(void)
+uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
 {
     /* CW event */
     if (get_event_cw())
@@ -60,6 +61,7 @@ uint32_t evaluate_ui(void)
         if (ui_state.run_state == 0)
         {
             increase_value(); // Increase current value digit
+            vTaskResume(*task_lcd_handle);
         }
     }
     
@@ -70,6 +72,7 @@ uint32_t evaluate_ui(void)
         if (ui_state.run_state == 0)
         {
             decrease_value();  // Decrease current value digit
+            vTaskResume(*task_lcd_handle);
         }
     }
     
@@ -80,6 +83,7 @@ uint32_t evaluate_ui(void)
         if (ui_state.run_state == 0)
         {
             increment_cursor_pos();
+            vTaskResume(*task_lcd_handle);
         }
         else
         {
