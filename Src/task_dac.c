@@ -22,7 +22,15 @@ void task_dac(void *arguments)
         local_dac_value = dac_setting;
         xSemaphoreGive(dac_access_semphr);
         
-        write_dac1_value(local_dac_value);
+        if (ui_state.run_state == 1)
+        {
+            write_dac1_value(local_dac_value);
+        }
+        else
+        {
+            write_dac1_value(0);
+        }
+        
         vTaskDelay(100);
     }
 }

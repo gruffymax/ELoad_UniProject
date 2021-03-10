@@ -11,6 +11,7 @@ static void change_setting_value(uint8_t dec);
 static void increment_cursor_pos(void);
 static uint8_t min_cursor_pos(void);
 static void reset_setting_values(void);
+static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle);
 void calculate_setting_value(void);
 
 SemaphoreHandle_t uistate_access_semphr = NULL;
@@ -55,7 +56,7 @@ void task_ui(void *task_lcd_handle)
 
 }
 
-uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
+static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
 {
     /* CW event */
     if (get_event_cw())
@@ -109,6 +110,7 @@ uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
         {
             SET_BIT(GPIOB->BSRR, GPIO_BSRR_BR1); // Turn off LED
         }
+        vTaskResume(*task_lcd_handle);
     }
     
     /* CC button */

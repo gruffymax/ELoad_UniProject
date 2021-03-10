@@ -6,6 +6,6 @@
 #include <stdint.h>
 
 void task_ui(void *task_lcd_handle);
-uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle);
+
 
 #endif //TASK_UI_H

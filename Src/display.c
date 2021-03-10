@@ -1,19 +1,21 @@
 #include "display.h"
 
     struct st7066u_iface lcd_interface = {
-    set_lcd_rw,
-    set_lcd_en,
-    set_lcd_rs,
-    set_lcd_d4,
-    set_lcd_d5,
-    set_lcd_d6,
-    set_lcd_d7,
-    set_d4_mode,
-    set_d5_mode,
-    set_d6_mode,
-    set_d7_mode,
-    is_d7_set,
-    us_delay};
+        set_lcd_rw,
+        set_lcd_en,
+        set_lcd_rs,
+        set_lcd_d4,
+        set_lcd_d5,
+        set_lcd_d6,
+        set_lcd_d7,
+        set_d4_mode,
+        set_d5_mode,
+        set_d6_mode,
+        set_d7_mode,
+        is_d7_set,
+        us_delay
+    };
+
 
 void lcd_init(void)
 {
@@ -40,20 +42,10 @@ void hide_cursor(void)
     set_instruction(0x0C); // Display ON, Cursor OFF, Blink OFF
 }
 
-void clear_line4(void)
-{
-    hide_cursor();
-    set_cursor(LINE4);
-    uint8_t i;
-    for (i=0; i<20; i++)
-    {
-        send_char(' ');
-    }
-    set_cursor(LINE4);
-}
-
 void write_display(struct displayData_s *displayData)
 {
+    set_instruction(0x0C); // Display ON, Cursor OFF, Blink OFF
+    set_instruction(0x01); // Clear display
     send_line1(displayData->line1);
     send_line2(displayData->line2);
     send_line3(displayData->line3);
