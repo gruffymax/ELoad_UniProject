@@ -18,19 +18,19 @@ set(EXECUTABLE ${PROJECT_NAME}.elf)
 set(SRC_FILES
         Startup/startup_stm32g071xx.s
         Src/main.c
-        Src/init.c
+        Src/Hardware/init.c
         Src/system_stm32g0xx.c
-        Src/clock_tree.c
-        Src/gpio.c
-        Src/interrupts.c
-        Src/dac.c
-        Src/display.c
-        Src/st7066u_lcd.c
+        Src/Hardware/clock_tree.c
+        Src/Hardware/gpio.c
+        Src/Hardware/interrupts.c
+        Src/Hardware/dac.c
+        Src/Hardware/display.c
+        Src/Hardware/st7066u_lcd.c
         Src/syscalls.c
-        Src/task_ui.c
-        Src/task_control.c
-        Src/task_lcd.c
-        Src/adc.c
+        Src/Tasks/task_ui.c
+        Src/Tasks/task_control.c
+        Src/Tasks/task_lcd.c
+        Src/Hardware/adc.c
         FreeRTOS/Source/tasks.c
         FreeRTOS/Source/list.c
         FreeRTOS/Source/queue.c
@@ -43,6 +43,8 @@ add_executable(${EXECUTABLE} ${SRC_FILES})
 
 target_include_directories(${EXECUTABLE} PRIVATE
     Inc
+    Inc/Hardware
+    Inc/Tasks
     Drivers/CMSIS/Include
     Drivers/CMSIS/Device/ST/STM32G0xx/Include
     FreeRTOS/Source/include

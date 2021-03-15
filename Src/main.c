@@ -12,7 +12,6 @@
 #include "queue.h"
 
 #include "task_ui.h"
-#include "task_dac.h"
 #include "task_lcd.h"
 #include "task_control.h"
 
