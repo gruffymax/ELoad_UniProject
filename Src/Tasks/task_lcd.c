@@ -4,13 +4,18 @@
 #include <stdio.h>
 
 static void update_static_display(void);
-
-static void update_active_display(void);
 static void generate_static_display(void);
 static void generate_static_line1(void);
 static void generate_static_line2(void);
 static void generate_static_line3(void);
 static void generate_static_line4(void);
+
+static void update_active_display(void);
+static void generate_active_display(void);
+static void generate_active_line1(void);
+static void generate_active_line2(void);
+static void generate_active_line3(void);
+static void generate_active_line4(void);
 
 struct displayData_s displayData = {
     {0x20},
@@ -31,7 +36,7 @@ void task_lcd(void* argument)
              * ----------------------
              * Update the display regularly (100ms)
              */
-            //update_active_display(); //TODO
+            update_active_display();
             vTaskDelay(100);
         }
         else
@@ -155,3 +160,122 @@ static void generate_static_line4(void)
     }
 }
 
+void update_active_display(void)
+{
+    generate_active_display();
+    write_display(&displayData);
+}
+
+void generate_active_display(void)
+{
+    
+    generate_active_line1();
+    generate_active_line2();
+    generate_active_line3();
+    generate_active_line4();
+}
+
+static void generate_active_line1(void)
+{
+    switch (ui_state.mode)
+    {
+        case mode_cc:
+            strcpy(displayData.line1, "CC mode      RUNNING");
+            break;
+            
+        case mode_cv:
+            strcpy(displayData.line1, "CV mode      RUNNING");
+            break;
+            
+        case mode_cp:
+            strcpy(displayData.line1, "CP mode      RUNNING");
+            break;
+            
+        case mode_cr:
+            strcpy(displayData.line1, "CR mode      RUNNING");
+            break;
+            
+        default:
+            break;
+    }
+}
+
+static void generate_active_line2(void)
+{
+    switch (ui_state.mode)
+    {
+        case mode_cc:
+            strcpy(displayData.line2, "                    ");
+            break;
+            
+        case mode_cv:
+            strcpy(displayData.line2, "                    ");
+            break;
+            
+        case mode_cp:
+            strcpy(displayData.line2, "                    ");
+            break;
+            
+        case mode_cr:
+            strcpy(displayData.line2, "                    ");
+            break;
+            
+        default:
+            break;
+    }
+}
+
+static void generate_active_line3(void)
+{
+    uint16_t value = 0;
+    
+    switch (ui_state.mode)
+    {
+        case mode_cc:
+            sprintf(displayData.line3, "%05dmA", get_current());
+            break;
+            
+        case mode_cv:
+            value = get_voltage();
+            sprintf(displayData.line3, "%05dmV", value);
+            break;
+            
+        case mode_cp:
+            value = (get_current() * get_voltage())/1000;
+            sprintf(displayData.line3, "%05dmW", value);
+            break;
+            
+        case mode_cr:
+            value = get_voltage() / get_current();
+            sprintf(displayData.line3, "%05dOhms", value);
+            break;
+            
+        default:
+            break;
+    }
+}
+
+static void generate_active_line4(void)
+{
+    switch (ui_state.mode)
+    {
+        case mode_cc:
+            strcpy(displayData.line4, "                    ");
+            break;
+            
+        case mode_cv:
+            strcpy(displayData.line4, "                    ");
+            break;
+            
+        case mode_cp:
+            strcpy(displayData.line4, "                    ");
+            break;
+            
+        case mode_cr:
+            strcpy(displayData.line4, "                    ");
+            break;
+            
+        default:
+            break;
+    }
+}

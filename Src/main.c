@@ -67,7 +67,7 @@ BaseType_t create_tasks(void)
         return ret;
     }
     
-    ret = xTaskCreate(task_control, "Task_Control", 128, NULL, tskIDLE_PRIORITY + 1, NULL);
+    ret = xTaskCreate(task_control, "Task_Control", 256, NULL, tskIDLE_PRIORITY + 1, NULL);
     if (ret != pdPASS)
     {
         /* Task not created successfully */

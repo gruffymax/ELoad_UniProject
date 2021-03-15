@@ -41,7 +41,5 @@ struct UI_State_s
 };
 extern struct UI_State_s ui_state; // Global definition
 
-/******************** DAC setting value *********************************************/
-extern uint32_t dac_setting; // Global definition
 
 #endif //SHARED_H
