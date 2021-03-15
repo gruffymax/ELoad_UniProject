@@ -34,10 +34,10 @@ void task_lcd(void* argument)
         {
             /* Active display mode
              * ----------------------
-             * Update the display regularly (100ms)
+             * Update the display regularly (200ms)
              */
             update_active_display();
-            vTaskDelay(100);
+            vTaskDelay(200);
         }
         else
         {
