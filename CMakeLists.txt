@@ -28,7 +28,6 @@ set(SRC_FILES
         Src/st7066u_lcd.c
         Src/syscalls.c
         Src/task_ui.c
-        Src/task_dac.c
         Src/task_control.c
         Src/task_lcd.c
         Src/adc.c

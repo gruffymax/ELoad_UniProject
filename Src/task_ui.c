@@ -15,19 +15,6 @@ static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle);
 void calculate_setting_value(void);
 
 SemaphoreHandle_t uistate_access_semphr = NULL;
-struct UI_State_s ui_state =
-{
-    mode_cc,
-    stopped,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    {{0},{0}}
-};
 
 void task_ui(void *task_lcd_handle)
 {
@@ -44,13 +31,15 @@ void task_ui(void *task_lcd_handle)
         // Generate display output
         // Update LCD
 
-        /* Start critical section */
+        /* ---Start critical section--- */
         while(xSemaphoreTake(uistate_access_semphr, 0) != pdTRUE)
         {
-            
+            // Wait until semaphore taken
         }
         evaluate_ui(task_lcd_handle);
         xSemaphoreGive(uistate_access_semphr); // Return semaphore
+        /* ---End Critical Section--- */
+        
         vTaskDelay(100);
     }
 

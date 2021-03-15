@@ -5,17 +5,16 @@
 
 
 static uint32_t local_dac_value = 0; 
-SemaphoreHandle_t dac_access_semphr = NULL;
+SemaphoreHandle_t dac_access_semphr;
 
 void task_dac(void *arguments)
 {
-    dac_access_semphr = xSemaphoreCreateMutex();
     uint32_t dac_setting = 0x7D0;
     
-    while(1)
+    while (1)
     {
         /* Critial block */
-        while(xSemaphoreTake(dac_access_semphr, 0) != pdTRUE)
+        while (xSemaphoreTake(dac_access_semphr, 0) != pdTRUE)
         {
             //Wait until semaphore free
         }

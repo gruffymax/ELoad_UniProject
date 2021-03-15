@@ -6,9 +6,11 @@
 
 #include "stm32g0xx.h"
 #include "init.h"
+
 #include "FreeRTOS.h"
 #include "task.h"
 #include "queue.h"
+
 #include "task_ui.h"
 #include "task_dac.h"
 #include "task_lcd.h"
@@ -20,10 +22,25 @@
 BaseType_t create_tasks(void);
 static TaskHandle_t task_lcd_handle = NULL;
 
+extern struct UI_State_s ui_state;
+struct UI_State_s ui_state =
+{
+    mode_cc,
+    stopped,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    {{0},{0}}
+};
+
 int main(void)
 {
     init_system();
-    //init_mutexes();
+    SemaphoreHandle_t uistate_access_semphr = xSemaphoreCreateMutex();
     
     if (create_tasks() == pdPASS)
     {
@@ -36,13 +53,6 @@ int main(void)
 BaseType_t create_tasks(void)
 {
     BaseType_t ret = 0;
-    
-    ret = xTaskCreate(task_dac, "Task_DAC", 64, NULL, tskIDLE_PRIORITY + 1, NULL);
-    if (ret != pdPASS)
-    {
-        /* Task not created successfully */
-        return ret;
-    }
     
     ret = xTaskCreate(task_lcd, "Task_LCD", 128, NULL, tskIDLE_PRIORITY + 1, &task_lcd_handle);
     if (ret != pdPASS)
@@ -70,8 +80,8 @@ BaseType_t create_tasks(void)
 
 void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName)
 {
-    TaskHandle_t bad_task_handle = xTask;     // this seems to give me the crashed task handle
-    char *bad_task_name = pcTaskName;     // this seems to give me a pointer to the name of the crashed task
+    TaskHandle_t bad_task_handle = xTask;     // Crashed task handle
+    char *bad_task_name = pcTaskName;     // Pointer to the name of the crashed task
     while(1)
     {
         // Stack overflow
