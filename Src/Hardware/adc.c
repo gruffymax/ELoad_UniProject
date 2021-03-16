@@ -7,7 +7,7 @@ void init_adc(void)
 {
    /* Enable the ADC Vreg */
    SET_BIT(ADC1->CR, ADC_CR_ADVREGEN);
-   MODIFY_REG(ADC1_COMMON->CCR, ADC_CCR_PRESC, ADC_CCR_PRESC_0); // Prescale 2
+   MODIFY_REG(ADC1_COMMON->CCR, ADC_CCR_PRESC, ADC_CCR_PRESC_1); // Prescale 4
    /* Create a 20us delay */
    uint16_t i = 0;
    for (i=0; i<360; i++)
@@ -37,7 +37,9 @@ void init_adc(void)
 void convert_voltage(void)
 {
    CLEAR_REG(ADC1->CHSELR);
-   CLEAR_BIT(ADC1->CFGR2, ADC_CFGR2_OVSE); // Disable oversampling
+   MODIFY_REG(ADC1->CFGR2, ADC_CFGR2_OVSR, ADC_CFGR2_OVSR_1);// Oversampling 8x
+   MODIFY_REG(ADC1->CFGR2, ADC_CFGR2_OVSS, ADC_CFGR2_OVSS_1); // Oversampling /2
+   SET_BIT(ADC1->CFGR2, ADC_CFGR2_OVSE); // enable oversampling
    SET_BIT(ADC1->CHSELR, ADC_CHSELR_CHSEL0); //Select ADC channel 0
    SET_BIT(ADC1->ISR, ADC_ISR_EOC); //Clear the EOC flag
    SET_BIT(ADC1->CR, ADC_CR_ADSTART); //Start the conversion
@@ -45,8 +47,8 @@ void convert_voltage(void)
    {
        //Wait for conversion to finish
    }
-   uint16_t res = READ_REG(ADC1->DR);
-   voltage =  (res / 2) * 10;
+   float res = (float)READ_REG(ADC1->DR) / 4;
+   voltage =  (uint16_t)(res * 10);
 }
 
 void convert_current(void)

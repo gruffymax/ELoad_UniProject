@@ -86,7 +86,12 @@ static uint32_t pid_control_loop(uint16_t v, uint16_t i1)
         default:
             break;
     }
-
+    
+    if (ui > 1 || ui < -1)
+    {
+        ui = 0;
+    }
+    
     e = is - i; //Calculate error
     
     up = kc*e;  //Calculate Proportional part

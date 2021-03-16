@@ -140,19 +140,19 @@ static void generate_static_line4(void)
     switch (ui_state.mode)
     {
         case mode_cc:
-            sprintf(displayData.line4, "%05dmA   %05dmA", ui_state.setting_current0, ui_state.setting_current1);
+            sprintf(displayData.line4, "%05d mA  %05d mA", ui_state.setting_current0, ui_state.setting_current1);
             break;
             
         case mode_cv:
-            sprintf(displayData.line4, "%05dmV", ui_state.setting_voltage);
+            sprintf(displayData.line4, "%05d mV", ui_state.setting_voltage);
             break;
             
         case mode_cp:
-            sprintf(displayData.line4, "%05dmW", ui_state.setting_power);
+            sprintf(displayData.line4, "%05d mW", ui_state.setting_power);
             break;
             
         case mode_cr:
-            sprintf(displayData.line4, "%05dOhms", ui_state.setting_resistance);
+            sprintf(displayData.line4, "%05d Ohms", ui_state.setting_resistance);
             break;
             
         default:
