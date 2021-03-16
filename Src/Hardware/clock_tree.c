@@ -37,17 +37,33 @@ static inline void enable_hsi(void)
 
 static inline void configure_system_clock(void)
 {
-    /* System clock to be set to 16 MHz HSI with no PLL */
+    /* System clock to be set to 64 MHz HSI with  PLL */
+    
+    
+    MODIFY_REG(RCC->PLLCFGR, RCC_PLLCFGR_PLLN, RCC_PLLCFGR_PLLN_4); // N = 16
+    MODIFY_REG(RCC->PLLCFGR, RCC_PLLCFGR_PLLM, RCC_PLLCFGR_PLLM_0); // M = 2
+    MODIFY_REG(RCC->PLLCFGR, RCC_PLLCFGR_PLLP, RCC_PLLCFGR_PLLP_0); // P = 2
+    SET_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLPEN); // Enable PLLP
+    MODIFY_REG(RCC->PLLCFGR, RCC_PLLCFGR_PLLR, RCC_PLLCFGR_PLLR_0); // R = 2
+    SET_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLREN); // Enable PLLR
+    MODIFY_REG(RCC->PLLCFGR, RCC_PLLCFGR_PLLSRC, RCC_PLLCFGR_PLLSRC_1);
+    SET_BIT(RCC->CR, RCC_CR_PLLON);
+    while (READ_BIT(RCC->CR, RCC_CR_PLLRDY) == 0x0U)
+    {
+	//Wait until PLL locked
+    }
+    
+
     MODIFY_REG(RCC->CFGR, RCC_CFGR_HPRE, 0x0U); //Set AHB prescaler to 1
     MODIFY_REG(RCC->CFGR, RCC_CFGR_PPRE, 0x0U); //Set APB prescaler to 1
-    MODIFY_REG(RCC->CFGR, RCC_CFGR_SW, 0x0U);   //Set clock source to HSISYS
-    while (READ_BIT(RCC->CFGR, RCC_CFGR_SWS) != 0x0U)
+    MODIFY_REG(RCC->CFGR, RCC_CFGR_SW, RCC_CFGR_SW_1);   //Set clock source to PLLRCLK
+    while (READ_BIT(RCC->CFGR, RCC_CFGR_SWS) != 0x10U)
     {
-        //Wait here until clock source is confirmed to be HSISYS
+        //Wait here until clock source is confirmed to be PLLRCLK
     }
     SystemInit();
     SystemCoreClockUpdate();
-    SysTick_Config(SystemCoreClock/1600);
+    SysTick_Config(SystemCoreClock/6400);
 }
 
 static inline void enable_periph_clocks(void)

@@ -190,7 +190,7 @@ uint8_t is_d7_set(void)
 void us_delay(uint32_t us)
 {
     uint32_t count = 0;
-    while (count < us)
+    while (count < us * 3)
     {
         count++;
     }

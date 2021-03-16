@@ -7,10 +7,10 @@ void init_adc(void)
 {
    /* Enable the ADC Vreg */
    SET_BIT(ADC1->CR, ADC_CR_ADVREGEN);
-
+   MODIFY_REG(ADC1_COMMON->CCR, ADC_CCR_PRESC, ADC_CCR_PRESC_0); // Prescale 2
    /* Create a 20us delay */
    uint16_t i = 0;
-   for (i=0; i<320; i++)
+   for (i=0; i<360; i++)
    {
        // Simple delay
    }
@@ -53,8 +53,8 @@ void convert_current(void)
 {
    CLEAR_REG(ADC1->CHSELR);
    SET_BIT(ADC1->CHSELR, ADC_CHSELR_CHSEL1); //Select ADC Channel 1
-   MODIFY_REG(ADC1->CFGR2, ADC_CFGR2_OVSR, ADC_CFGR2_OVSR_0 | ADC_CFGR2_OVSR_1);// Oversampling 16x
-   MODIFY_REG(ADC1->CFGR2, ADC_CFGR2_OVSS, ADC_CFGR2_OVSS_2); // Oversampling /16
+   MODIFY_REG(ADC1->CFGR2, ADC_CFGR2_OVSR, ADC_CFGR2_OVSR_2);// Oversampling 32x
+   MODIFY_REG(ADC1->CFGR2, ADC_CFGR2_OVSS, ADC_CFGR2_OVSS_2 | ADC_CFGR2_OVSS_0); // Oversampling /32
    SET_BIT(ADC1->CFGR2, ADC_CFGR2_OVSE); // Enable oversampling
    SET_BIT(ADC1->ISR, ADC_ISR_EOC); //Clear the EOC flag
    SET_BIT(ADC1->CR, ADC_CR_ADSTART); //Start the conversion

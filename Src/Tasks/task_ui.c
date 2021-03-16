@@ -14,35 +14,13 @@ static void reset_setting_values(void);
 static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle);
 void calculate_setting_value(void);
 
-SemaphoreHandle_t uistate_access_semphr = NULL;
-
 void task_ui(void *task_lcd_handle)
 {
-    //initialise_display();
-    uistate_access_semphr = xSemaphoreCreateMutex();
-    
     while(1)
     {
-        // TODO 
-        // Get Settings (Mutex)
-        // Get Data (Mutex)
-        // Set system state
-        // Set DAC setting
-        // Generate display output
-        // Update LCD
-
-        /* ---Start critical section--- */
-        while(xSemaphoreTake(uistate_access_semphr, 0) != pdTRUE)
-        {
-            // Wait until semaphore taken
-        }
         evaluate_ui(task_lcd_handle);
-        xSemaphoreGive(uistate_access_semphr); // Return semaphore
-        /* ---End Critical Section--- */
-        
         vTaskDelay(100);
     }
-
 }
 
 static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
@@ -127,14 +105,14 @@ static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
     if (get_event_button_cv())
     {
         clear_event_button_cv();
-        if (ui_state.run_state == 0 && ui_state.mode != mode_cv)
-        {
-            ui_state.mode = mode_cv;
-            ui_state.cursor_pos = 0;
-            ui_state.selected_set_point = 0;
-            reset_setting_values();
-            vTaskResume(*task_lcd_handle);
-        }
+        //if (ui_state.run_state == 0 && ui_state.mode != mode_cv)
+        //{
+        //    ui_state.mode = mode_cv;
+        //    ui_state.cursor_pos = 0;
+        //    ui_state.selected_set_point = 0;
+        //    reset_setting_values();
+        //    vTaskResume(*task_lcd_handle);
+        //}
     }
     
     /* CP button */

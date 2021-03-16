@@ -202,80 +202,17 @@ static void generate_active_line1(void)
 
 static void generate_active_line2(void)
 {
-    switch (ui_state.mode)
-    {
-        case mode_cc:
-            strcpy(displayData.line2, "                    ");
-            break;
-            
-        case mode_cv:
-            strcpy(displayData.line2, "                    ");
-            break;
-            
-        case mode_cp:
-            strcpy(displayData.line2, "                    ");
-            break;
-            
-        case mode_cr:
-            strcpy(displayData.line2, "                    ");
-            break;
-            
-        default:
-            break;
-    }
+    strcpy(displayData.line2, "                    ");
 }
 
 static void generate_active_line3(void)
 {
-    uint16_t value = 0;
-    
-    switch (ui_state.mode)
-    {
-        case mode_cc:
-            sprintf(displayData.line3, "%05dmA", get_current());
-            break;
-            
-        case mode_cv:
-            value = get_voltage();
-            sprintf(displayData.line3, "%05dmV", value);
-            break;
-            
-        case mode_cp:
-            value = (get_current() * get_voltage())/1000;
-            sprintf(displayData.line3, "%05dmW", value);
-            break;
-            
-        case mode_cr:
-            value = get_voltage() / get_current();
-            sprintf(displayData.line3, "%05dOhms", value);
-            break;
-            
-        default:
-            break;
-    }
+    sprintf(displayData.line3, "%04d mA   %05d mV", get_current(), get_voltage());
 }
 
 static void generate_active_line4(void)
 {
-    switch (ui_state.mode)
-    {
-        case mode_cc:
-            strcpy(displayData.line4, "                    ");
-            break;
-            
-        case mode_cv:
-            strcpy(displayData.line4, "                    ");
-            break;
-            
-        case mode_cp:
-            strcpy(displayData.line4, "                    ");
-            break;
-            
-        case mode_cr:
-            strcpy(displayData.line4, "                    ");
-            break;
-            
-        default:
-            break;
-    }
+    uint16_t power = (get_voltage() * get_current())/1000;
+    uint16_t resistance = get_voltage() / get_current();
+    sprintf(displayData.line4, "%05d Ohms  %05d mW", resistance, power); 
 }
