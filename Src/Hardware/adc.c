@@ -37,6 +37,7 @@ void init_adc(void)
 void convert_voltage(void)
 {
    CLEAR_REG(ADC1->CHSELR);
+   CLEAR_BIT(ADC1->CFGR2, ADC_CFGR2_OVSE); // Disable oversampling
    SET_BIT(ADC1->CHSELR, ADC_CHSELR_CHSEL0); //Select ADC channel 0
    SET_BIT(ADC1->ISR, ADC_ISR_EOC); //Clear the EOC flag
    SET_BIT(ADC1->CR, ADC_CR_ADSTART); //Start the conversion
@@ -52,6 +53,9 @@ void convert_current(void)
 {
    CLEAR_REG(ADC1->CHSELR);
    SET_BIT(ADC1->CHSELR, ADC_CHSELR_CHSEL1); //Select ADC Channel 1
+   MODIFY_REG(ADC1->CFGR2, ADC_CFGR2_OVSR, ADC_CFGR2_OVSR_0 | ADC_CFGR2_OVSR_1);// Oversampling 16x
+   MODIFY_REG(ADC1->CFGR2, ADC_CFGR2_OVSS, ADC_CFGR2_OVSS_2); // Oversampling /16
+   SET_BIT(ADC1->CFGR2, ADC_CFGR2_OVSE); // Enable oversampling
    SET_BIT(ADC1->ISR, ADC_ISR_EOC); //Clear the EOC flag
    SET_BIT(ADC1->CR, ADC_CR_ADSTART); //Start the conversion
    while (READ_BIT(ADC1->ISR, ADC_ISR_EOC) == 0)

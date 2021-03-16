@@ -64,6 +64,7 @@ static uint32_t pid_control_loop(uint16_t v, uint16_t i1)
     static float e_old = 0;      //Previous error
     float is = 0;        //Set point
     float i = (float)i1 / 1000.0;
+    float r = 0.0;
     switch (ui_state.mode)
     {
         mode_cp:
@@ -75,7 +76,7 @@ static uint32_t pid_control_loop(uint16_t v, uint16_t i1)
             break;
 
         mode_cv:
-            float r = (float)v / (float)i1;
+	    			r = (float)v / (float)i1;
             is = (float)ui_state.setting_voltage / r;
             break;
 
