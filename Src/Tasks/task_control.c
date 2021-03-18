@@ -1,9 +1,12 @@
 #include "task_control.h"
 
+/* Static Functions */
 static uint32_t control_loop_cc(void);
 static uint32_t pid_control_loop(uint16_t v, uint16_t i);
 
+/* Variables */
 uint32_t dac_setting = 0;
+
 
 void task_control(void *argument)
 {
@@ -61,10 +64,8 @@ static uint32_t pid_control_loop(uint16_t v, uint16_t i1)
 {
     const float kc = 0.35;   //Proportional Gain
     const float ki = 5;   //Integral Gain
-    const float kd = 0.08; //Derivative Gain
     static float ui = 0;  //Integral Part
     float up = 0;         //Proportional part
-    float ud = 0;         //Derivative Part
     float e = 0;          //Error
     static float e_old = 0;      //Previous error
     float is = 0;        //Set point
@@ -97,9 +98,6 @@ static uint32_t pid_control_loop(uint16_t v, uint16_t i1)
     up = kc*e;  //Calculate Proportional part
     
     ui = ui + (kc/ki) * e; //Calculate Integral part
-    
-    //ud = kc * kd * ((e - e_old)); //Calculate Derivative part
-    //e_old = e;
     
     return (uint32_t)((is + up + ui)*1000);
     
