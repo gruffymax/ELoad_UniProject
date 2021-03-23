@@ -11,7 +11,8 @@ static void increment_cursor_pos(void);
 static uint8_t min_cursor_pos(void);
 static void reset_setting_values(void);
 static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle);
-void calculate_setting_value(void);
+static uint8_t sanity_check(uint32_t setting, enum mode_e mode);
+uint8_t calculate_setting_value(void);
 
 void task_ui(void *task_lcd_handle)
 {
@@ -24,14 +25,20 @@ void task_ui(void *task_lcd_handle)
 
 static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
 {
+    uint8_t previous_digit = 0; 
     /* CW event */
     if (get_event_cw())
     {
         clear_event_cw(); // Clear the event flag
         if (ui_state.run_state == 0)
         {
+            // Save current digit so we can revert if sanity check fails
+            previous_digit = ui_state.setting_values[ui_state.selected_set_point][ui_state.cursor_pos];  
             increase_value(); // Increase current value digit
-            calculate_setting_value();
+            if (calculate_setting_value())
+            {
+                ui_state.setting_values[ui_state.selected_set_point][ui_state.cursor_pos] = previous_digit;
+            }
             vTaskResume(*task_lcd_handle);
         }
     }
@@ -42,8 +49,13 @@ static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
         clear_event_ccw(); // Clear the event flag
         if (ui_state.run_state == 0)
         {
+            // Save current digit so we can revert if sanity check fails
+            previous_digit = ui_state.setting_values[ui_state.selected_set_point][ui_state.cursor_pos];  
             decrease_value();  // Decrease current value digit
-            calculate_setting_value();
+            if (calculate_setting_value())
+            {
+                ui_state.setting_values[ui_state.selected_set_point][ui_state.cursor_pos] = previous_digit;
+            }
             vTaskResume(*task_lcd_handle);
         }
     }
@@ -216,30 +228,85 @@ static void reset_setting_values(void)
     }
 }
 
-void calculate_setting_value(void)
+uint8_t calculate_setting_value(void)
 {
     uint32_t setting0 = (ui_state.setting_values[0][0] * 10000) + (ui_state.setting_values[0][1] * 1000) + (ui_state.setting_values[0][2] * 100) + (ui_state.setting_values[0][3] * 10) + ui_state.setting_values[0][4];
     uint32_t setting1 = (ui_state.setting_values[1][0] * 10000) + (ui_state.setting_values[1][1] * 1000) + (ui_state.setting_values[1][2] * 100) + (ui_state.setting_values[1][3] * 10) + ui_state.setting_values[1][4];
     switch (ui_state.mode)
     {
         case mode_cc:
+            if (sanity_check(setting0, mode_cc))
+            {
+                return 1;
+            }
+            if (sanity_check(setting1, mode_cc))
+            {
+                return 1;
+            }
             ui_state.setting_current0 = setting0;
             ui_state.setting_current1 = setting1;
             break;
             
         case mode_cv:
+            if (sanity_check(setting0, mode_cv))
+            {
+                return 1;
+            }
             ui_state.setting_voltage = setting0;
             break;
             
         case mode_cp:
+            if (sanity_check(setting0, mode_cp))
+            {
+                return 1;
+            }
             ui_state.setting_power = setting0;
             break;
             
         case mode_cr:
+            if (sanity_check(setting0, mode_cr))
+            {
+                return 1;
+            }
             ui_state.setting_resistance = setting0;
             break;
             
         default:
             break;
     }
+    return 0;
+}
+
+uint8_t sanity_check(uint32_t setting, enum mode_e mode)
+{
+    switch(mode)
+    {
+        case mode_cc:
+            if (setting > 2047)
+            {
+                return 1;
+            }
+            break;
+        case mode_cv:
+            if (setting > 20000)
+            {
+                return 1;
+            }
+            break;
+        case mode_cp:
+            if (setting > 10000)
+            {
+                return 1;
+            }
+            break;
+        case mode_cr:
+            if (setting > 10000)
+            {
+                return 1;
+            }
+            break;
+        default:
+            return 1;
+    }
+    return 0;
 }
