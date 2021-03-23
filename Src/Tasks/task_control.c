@@ -21,7 +21,12 @@ void task_control(void *argument)
         convert_current();
         current_v = get_voltage();
         current_i = get_current();
-        
+        /* If power is greater than 11W, stop the device */
+        if (current_v * current_i > 11000000)
+        {
+            ui_state.run_state = stopped;
+        }
+
         if (ui_state.run_state == running)
         {
             if (ui_state.mode == mode_cc)
@@ -46,7 +51,7 @@ void task_control(void *argument)
         {
             write_dac1_value(0);
         }
-        vTaskDelay(25);
+        vTaskDelay(10);
     }
 }
 static uint32_t control_loop_cc(void)
