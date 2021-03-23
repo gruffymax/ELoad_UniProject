@@ -1,4 +1,5 @@
 #include "task_control.h"
+#include "adc.h"
 
 /* Static Functions */
 static uint32_t control_loop_cc(void);
@@ -62,13 +63,12 @@ static uint32_t control_loop_cc(void)
     
 static uint32_t pid_control_loop(uint16_t v, uint16_t i1)
 {
-    const float kc = 0.35;   //Proportional Gain
+    const float kc = 0.35;//Proportional Gain
+    float up = 0;         //Proportional part
     const float ki = 5;   //Integral Gain
     static float ui = 0;  //Integral Part
-    float up = 0;         //Proportional part
     float e = 0;          //Error
-    static float e_old = 0;      //Previous error
-    float is = 0;        //Set point
+    float is = 0;         //Set point
     float i = (float)i1 / 1000.0;
     switch (ui_state.mode)
     {
@@ -94,9 +94,7 @@ static uint32_t pid_control_loop(uint16_t v, uint16_t i1)
     }
     
     e = is - i; //Calculate error
-    
     up = kc*e;  //Calculate Proportional part
-    
     ui = ui + (kc/ki) * e; //Calculate Integral part
     
     return (uint32_t)((is + up + ui)*1000);

@@ -39,7 +39,6 @@ struct UI_State_s ui_state =
 int main(void)
 {
     init_system();
-    SemaphoreHandle_t uistate_access_semphr = xSemaphoreCreateMutex();
     
     if (create_tasks() == pdPASS)
     {
@@ -79,8 +78,8 @@ BaseType_t create_tasks(void)
 
 void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName)
 {
-    TaskHandle_t bad_task_handle = xTask;     // Crashed task handle
-    char *bad_task_name = pcTaskName;     // Pointer to the name of the crashed task
+    //TaskHandle_t bad_task_handle = xTask;     // Crashed task handle
+    //char *bad_task_name = pcTaskName;     // Pointer to the name of the crashed task
     while(1)
     {
         // Stack overflow

@@ -4,7 +4,6 @@
 #include "task.h"
 #include "shared.h"
 #include "dac.h"
-#include "adc.h"
 
 
 

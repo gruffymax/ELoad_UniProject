@@ -2,6 +2,7 @@
 #include "display.h"
 #include <string.h>
 #include <stdio.h>
+#include "adc.h"
 
 static void update_static_display(void);
 static void generate_static_display(void);
@@ -140,19 +141,19 @@ static void generate_static_line4(void)
     switch (ui_state.mode)
     {
         case mode_cc:
-            sprintf(displayData.line4, "%05d mA  %05d mA", ui_state.setting_current0, ui_state.setting_current1);
+            sprintf(displayData.line4, "%05d mA  %05d mA", (int)ui_state.setting_current0, (int)ui_state.setting_current1);
             break;
             
         case mode_cv:
-            sprintf(displayData.line4, "%05d mV", ui_state.setting_voltage);
+            sprintf(displayData.line4, "%05d mV", (int)ui_state.setting_voltage);
             break;
             
         case mode_cp:
-            sprintf(displayData.line4, "%05d mW", ui_state.setting_power);
+            sprintf(displayData.line4, "%05d mW", (int)ui_state.setting_power);
             break;
             
         case mode_cr:
-            sprintf(displayData.line4, "%05d Ohms", ui_state.setting_resistance);
+            sprintf(displayData.line4, "%05d Ohms", (int)ui_state.setting_resistance);
             break;
             
         default:
@@ -207,7 +208,7 @@ static void generate_active_line2(void)
 
 static void generate_active_line3(void)
 {
-    sprintf(displayData.line3, "%04d mA   %05d mV", get_current(), get_voltage());
+    sprintf(displayData.line3, "%04d mA   %05d mV", (int)get_current(), (int)get_voltage());
 }
 
 static void generate_active_line4(void)
