@@ -4,9 +4,11 @@
 /* Static Functions */
 static uint32_t control_loop_cc(void);
 static uint32_t pid_control_loop(uint16_t v, uint16_t i);
+static float p_voltage_control_loop(uint16_t v)
 
 /* Variables */
 uint32_t dac_setting = 0;
+uint32_t current_dac_setting = 0;
 
 
 void task_control(void *argument)
@@ -33,18 +35,26 @@ void task_control(void *argument)
             {
                 dac_setting = control_loop_cc();
             }
+            else if (ui_state.mode == mode_cv)
+            {
+              if (current_dac_setting == 0)
+              {
+                current_dac_setting = 10;
+              }
+              dac_setting = (uint32_t)current_dac_setting * p_voltage_control_loop(current_v);
+            }
             else
             {
-                dac_setting = pid_control_loop(current_v, current_i);
+                dac_setting = pi_control_loop(current_v, current_i);
             }
 
             if (dac_setting > 2047)
 	    {	
-		write_dac1_value(2047 * 2);
+		    write_dac1_value(2047 * 2);
 	    }
 	    else
 	    {
-		write_dac1_value(dac_setting * 2);
+		    write_dac1_value(dac_setting * 2);
 	    }
         }
         else
@@ -66,7 +76,7 @@ static uint32_t control_loop_cc(void)
     }
 }
     
-static uint32_t pid_control_loop(uint16_t v, uint16_t i1)
+static uint32_t pi_control_loop(uint16_t v, uint16_t i1)
 {
     const float kc = 0.35;//Proportional Gain
     float up = 0;         //Proportional part
@@ -84,11 +94,6 @@ static uint32_t pid_control_loop(uint16_t v, uint16_t i1)
         case mode_cr:
             is = (float)v / ((float)ui_state.setting_resistance * 1000);
             break;
-
-        case mode_cv:
-            is = 0;
-	    break;
-
         default:
             break;
     }
@@ -105,3 +110,13 @@ static uint32_t pid_control_loop(uint16_t v, uint16_t i1)
     return (uint32_t)((is + up + ui)*1000);
     
 }
+
+static float p_voltage_control_loop(uint16_t v)
+{
+  const float kc = 1;//Proportional Gain
+  float up = 0;         //Proportional part
+  float e = 0;          //Error
+
+  e = (float)ui_state.setting_voltage / (float)v;
+  up = kc * e;
+  return up;
