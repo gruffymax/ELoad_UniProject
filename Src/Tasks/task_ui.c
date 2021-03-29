@@ -116,6 +116,14 @@ static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
     if (get_event_button_cv())
     {
         clear_event_button_cv();
+        if (ui_state.run_state == 0 && ui_state.mode != mode_cv)
+        {
+            ui_state.mode = mode_cv;
+            ui_state.cursor_pos = 0;
+            ui_state.selected_set_point = 0;
+            reset_setting_values();
+            vTaskResume(*task_lcd_handle);
+        }
     }
     
     /* CP button */

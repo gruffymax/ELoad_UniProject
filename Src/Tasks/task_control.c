@@ -3,8 +3,8 @@
 
 /* Static Functions */
 static uint32_t control_loop_cc(void);
-static uint32_t pid_control_loop(uint16_t v, uint16_t i);
-static float p_voltage_control_loop(uint16_t v)
+static uint32_t pi_control_loop(uint16_t v, uint16_t i);
+static float p_voltage_control_loop(uint16_t v);
 
 /* Variables */
 uint32_t dac_setting = 0;
@@ -37,11 +37,8 @@ void task_control(void *argument)
             }
             else if (ui_state.mode == mode_cv)
             {
-              if (current_dac_setting == 0)
-              {
-                current_dac_setting = 10;
-              }
-              dac_setting = (uint32_t)current_dac_setting * p_voltage_control_loop(current_v);
+              dac_setting = current_dac_setting + p_voltage_control_loop(current_v);
+              current_dac_setting = dac_setting;
             }
             else
             {
@@ -113,10 +110,45 @@ static uint32_t pi_control_loop(uint16_t v, uint16_t i1)
 
 static float p_voltage_control_loop(uint16_t v)
 {
-  const float kc = 1;//Proportional Gain
-  float up = 0;         //Proportional part
-  float e = 0;          //Error
+  int total = 0;
+  static float avg;
+  static int pos = 0;
+  static uint16_t v_buffer[3] = {0};
+  static int count = 0;
+  v_buffer[pos] = v;
+  
+  if (pos == 3)
+  {
+    pos = 0;
+  }
+  else
+  {
+    pos++;
+  }
 
-  e = (float)ui_state.setting_voltage / (float)v;
-  up = kc * e;
-  return up;
+  if (count < 3)
+  {
+    count++;
+  }
+
+  if (count >= 3)
+  {
+    for (int i=0; i<3; i++)
+    {
+      total = total + v_buffer[i];
+    }
+    
+    if (ui_state.setting_voltage < (total / 3))
+    {
+      return 1;
+    }
+    else if (ui_state.setting_voltage == (total/3))
+    {
+      return 0;
+    }
+    else
+    {
+      return -1;
+    }
+  }
+}
