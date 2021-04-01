@@ -4,12 +4,6 @@
 #include <stdint.h>
 #include "FreeRTOS.h"
 #include "task.h"
-#include "semphr.h"
-
-/******************** Semaphores *****************************************************/
-extern SemaphoreHandle_t uistate_access_semphr; // Global definition
-extern SemaphoreHandle_t dac_access_semphr; // Global definition
-
 
 /******************** User Interface State *******************************************/
 enum run_e
@@ -38,6 +32,7 @@ struct UI_State_s
     uint8_t selected_set_point;
     uint8_t cursor_pos;
     uint8_t setting_values[2][5];
+    uint8_t voltage_mode_calibration_run;
 };
 extern struct UI_State_s ui_state; // Global definition
 

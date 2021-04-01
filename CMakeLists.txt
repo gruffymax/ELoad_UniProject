@@ -30,6 +30,7 @@ set(SRC_FILES
         Src/Tasks/task_ui.c
         Src/Tasks/task_control.c
         Src/Tasks/task_lcd.c
+        Src/Tasks/pi.c
         Src/Hardware/adc.c
         FreeRTOS/Source/tasks.c
         FreeRTOS/Source/list.c

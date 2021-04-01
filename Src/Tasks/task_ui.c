@@ -87,6 +87,7 @@ static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
         else
         {
             SET_BIT(GPIOB->BSRR, GPIO_BSRR_BR1); // Turn off LED
+            ui_state.voltage_mode_calibration_run = 0; // Reset calibration
         }
         vTaskResume(*task_lcd_handle);
     }

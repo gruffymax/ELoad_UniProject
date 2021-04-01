@@ -33,7 +33,8 @@ struct UI_State_s ui_state =
     0,
     0,
     1,
-    {{0},{0}}
+    {{0},{0}},
+    0
 };
 
 int main(void)
