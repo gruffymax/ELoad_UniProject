@@ -1,7 +1,7 @@
 /* Electronic Load Project 
  * Gareth Waymark up762102
  * 
- * Main
+ * main.c
  */
 
 #include "stm32g0xx.h"

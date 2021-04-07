@@ -1,3 +1,8 @@
+/* Electronic Load Project
+ * Gareth Waymark 762102
+ *
+ * adc.c
+ */
 #include "adc.h"
 
 static uint16_t voltage = 0;

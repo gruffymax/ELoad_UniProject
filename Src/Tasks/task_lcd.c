@@ -1,3 +1,8 @@
+/* Electronic Load Project
+ * Gareth Waymark 762102
+ *
+ * task_lcd.c
+ */
 #include "task_lcd.h"
 #include "display.h"
 #include <string.h>

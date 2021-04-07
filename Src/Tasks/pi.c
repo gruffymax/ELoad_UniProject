@@ -1,3 +1,8 @@
+/* Electronic Load Project
+ * Gareth Waymark 762102
+ *
+ * pi.c
+ */
 #include <stdint.h>
 #include "pi.h"
 #include "shared.h"

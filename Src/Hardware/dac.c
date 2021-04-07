@@ -1,3 +1,8 @@
+/* Electronic Load Project
+ * Gareth Waymark 762102
+ *
+ * dac.c
+ */
 #include "dac.h"
 
 void init_dac(void)

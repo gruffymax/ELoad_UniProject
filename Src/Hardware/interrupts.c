@@ -1,3 +1,8 @@
+/* Electronic Load Project
+ * Gareth Waymark
+ *
+ * interrupts.c
+ */
 #include "interrupts.h"
 
 /* Static functions */

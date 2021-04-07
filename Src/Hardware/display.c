@@ -1,3 +1,8 @@
+/* Electronic Load Project
+ * Gareth Waymark 762102
+ *
+ * display.c
+ */
 #include "display.h"
 
     struct st7066u_iface lcd_interface = {
