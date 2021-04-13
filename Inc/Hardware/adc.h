@@ -1,3 +1,8 @@
+/* Electronic Load Project
+ * Gareth Waymark 762102
+ *
+ * adc.h
+ */
 #ifndef ADC_H
 #define ADC_H
 

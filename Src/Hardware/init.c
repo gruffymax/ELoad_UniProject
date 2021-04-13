@@ -19,8 +19,6 @@ void init_system(void)
     init_interrupts();
     init_dac();
     init_adc();
-    //init_uart();
-    //init_timers();
 }
 
 

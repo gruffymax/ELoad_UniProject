@@ -70,7 +70,7 @@ target_compile_options(${EXECUTABLE} PRIVATE
     )
 
 target_link_options(${EXECUTABLE} PRIVATE
-    -T/home/gareth/Dropbox/Uni/L6/Individual_Project/STM32/STM32G071CBTx_FLASH.ld
+    -T/home/gareth/Uni/L6/Individual_Project/STM32/STM32G071CBTx_FLASH.ld
     -mcpu=cortex-m0plus
     -mthumb
     -mfloat-abi=soft

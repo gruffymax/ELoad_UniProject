@@ -1,3 +1,9 @@
+/* Electronic Load Project
+ * Gareth Waymark 762102
+ *
+ * shared.h
+ */
+
 #ifndef SHARED_H
 #define SHARED_H
 

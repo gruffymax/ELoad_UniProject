@@ -5,8 +5,8 @@
  */
 #include "adc.h"
 
-static uint16_t voltage = 0;
-static uint16_t current = 0;
+static uint16_t voltage_mv = 0;
+static uint16_t current_ma = 0;
 
 void init_adc(void)
 {
@@ -42,8 +42,9 @@ void init_adc(void)
 void convert_voltage(void)
 {
    CLEAR_REG(ADC1->CHSELR);
+   /* Configure for oversampling 13bit */
    MODIFY_REG(ADC1->CFGR2, ADC_CFGR2_OVSR, ADC_CFGR2_OVSR_1);// Oversampling 8x
-   MODIFY_REG(ADC1->CFGR2, ADC_CFGR2_OVSS, ADC_CFGR2_OVSS_1); // Oversampling /2
+   MODIFY_REG(ADC1->CFGR2, ADC_CFGR2_OVSS, ADC_CFGR2_OVSS_1); // Oversampling /4
    SET_BIT(ADC1->CFGR2, ADC_CFGR2_OVSE); // enable oversampling
    SET_BIT(ADC1->CHSELR, ADC_CHSELR_CHSEL0); //Select ADC channel 0
    SET_BIT(ADC1->ISR, ADC_ISR_EOC); //Clear the EOC flag
@@ -53,7 +54,7 @@ void convert_voltage(void)
        //Wait for conversion to finish
    }
    float res = (float)READ_REG(ADC1->DR) / 4;
-   voltage =  (uint16_t)(res * 10);
+   voltage_mv =  (uint16_t)(res * 10);
 }
 
 void convert_current(void)
@@ -70,15 +71,15 @@ void convert_current(void)
        //Wait for conversion to finish
    }
    uint16_t res = READ_REG(ADC1->DR);
-   current =  (res / 2);
+   current_ma =  (res / 2);
 }
 
 uint16_t get_voltage(void)
 {
-    return voltage;
+    return voltage_mv;
 }
 
 uint16_t get_current(void)
 {
-    return current;
+    return current_ma;
 }
