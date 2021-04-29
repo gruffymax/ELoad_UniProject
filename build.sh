@@ -1,3 +1,4 @@
+#!/bin/bash
 # Setup Arm Compiler Environment and invoke CMake
 # By Gareth Waymark 02/2021
 

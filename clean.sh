@@ -1,3 +1,4 @@
+#!/bin/bash
 # Clean old CMake files and directories
 rm -rf CMakeFiles
 rm -f CMakeCache.txt

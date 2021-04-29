@@ -60,14 +60,14 @@ BaseType_t create_tasks(void)
         return ret;
     }
     
-    ret = xTaskCreate(task_ui, "Task_ui", 128, &task_lcd_handle, tskIDLE_PRIORITY + 1, NULL);
+    ret = xTaskCreate(task_ui, "Task_ui", 128, &task_lcd_handle, tskIDLE_PRIORITY + 2, NULL);
     if (ret != pdPASS)
     {
         /* Task not created successfully */
         return ret;
     }
     
-    ret = xTaskCreate(task_control, "Task_Control", 512, NULL, tskIDLE_PRIORITY + 2, NULL);
+    ret = xTaskCreate(task_control, "Task_Control", 512, NULL, tskIDLE_PRIORITY + 3, NULL);
     if (ret != pdPASS)
     {
         /* Task not created successfully */
