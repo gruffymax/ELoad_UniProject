@@ -28,7 +28,7 @@ void task_ui(void *task_lcd_handle)
     while(1)
     {
         evaluate_ui(task_lcd_handle);
-        vTaskDelayUntil(&LastWakeTime, 200);
+        vTaskDelayUntil(&LastWakeTime, 100);
     }
 }
 
