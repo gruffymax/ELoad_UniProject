@@ -53,7 +53,7 @@ BaseType_t create_tasks(void)
 {
     BaseType_t ret = 0;
     
-    ret = xTaskCreate(task_lcd, "Task_LCD", 128, NULL, tskIDLE_PRIORITY + 1, &task_lcd_handle);
+    ret = xTaskCreate(task_lcd, "Task_LCD", 256, NULL, tskIDLE_PRIORITY + 1, &task_lcd_handle);
     if (ret != pdPASS)
     {
         /* Task not created successfully */

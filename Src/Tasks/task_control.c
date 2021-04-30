@@ -6,6 +6,8 @@
 #include "task_control.h"
 #include "adc.h"
 #include "pi.h"
+#include "FreeRTOS.h"
+#include "task.h"
 
 /* Static Functions */
 static uint32_t control_loop_cc(void);
@@ -21,7 +23,8 @@ void task_control(void *argument)
   uint16_t current_v = 0;
   uint16_t current_i = 0;
   float r = 1000.0;
-    
+  TickType_t LastWakeTime = xTaskGetTickCount();
+  
   while (1)
   {
     /* Get ADC values */
@@ -74,7 +77,7 @@ void task_control(void *argument)
           write_dac1_value(0);
           voltage_in = (float)get_voltage() / 1000;
         }
-        vTaskDelay(10);
+        vTaskDelayUntil(&LastWakeTime, 5);
     }
 }
 static uint32_t control_loop_cc(void)

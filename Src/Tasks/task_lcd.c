@@ -8,6 +8,8 @@
 #include <string.h>
 #include <stdio.h>
 #include "adc.h"
+#include "FreeRTOS.h"
+#include "task.h"
 
 static void update_static_display(void);
 static void generate_static_display(void);
@@ -33,7 +35,8 @@ struct displayData_s displayData = {
 void task_lcd(void* argument)
 {
     lcd_init();
-    
+    TickType_t LastWakeTime = xTaskGetTickCount();
+
     while(1)
     {
         if (ui_state.run_state == 1)
@@ -43,7 +46,7 @@ void task_lcd(void* argument)
              * Update the display regularly (200ms)
              */
             update_active_display();
-            vTaskDelay(200);
+            vTaskDelayUntil(&LastWakeTime, 200);
         }
         else
         {
@@ -53,7 +56,7 @@ void task_lcd(void* argument)
              * LCD task is suspended until an event occurs.
              */
             update_static_display();
-            vTaskSuspend(NULL);
+            vTaskDelayUntil(&LastWakeTime, 200);
         }
     }
 }

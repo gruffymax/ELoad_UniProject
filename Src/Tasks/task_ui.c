@@ -7,6 +7,8 @@
 #include "shared.h"
 #include "interrupts.h"
 #include "stm32g0xx.h"
+#include "FreeRTOS.h"
+#include "task.h"
 
 /* Static functions */
 static void increase_value(void);
@@ -21,10 +23,12 @@ uint8_t calculate_setting_value(void);
 
 void task_ui(void *task_lcd_handle)
 {
+    TickType_t LastWakeTime = xTaskGetTickCount();
+
     while(1)
     {
         evaluate_ui(task_lcd_handle);
-        vTaskDelay(100);
+        vTaskDelayUntil(&LastWakeTime, 200);
     }
 }
 
@@ -44,7 +48,6 @@ static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
             {
                 ui_state.setting_values[ui_state.selected_set_point][ui_state.cursor_pos] = previous_digit;
             }
-            vTaskResume(*task_lcd_handle);
         }
     }
     
@@ -61,7 +64,6 @@ static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
             {
                 ui_state.setting_values[ui_state.selected_set_point][ui_state.cursor_pos] = previous_digit;
             }
-            vTaskResume(*task_lcd_handle);
         }
     }
     
@@ -72,7 +74,6 @@ static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
         if (ui_state.run_state == 0)
         {
             increment_cursor_pos();
-            vTaskResume(*task_lcd_handle);
         }
         else
         {
@@ -94,7 +95,6 @@ static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
             SET_BIT(GPIOB->BSRR, GPIO_BSRR_BR1); // Turn off LED
             ui_state.voltage_mode_calibration_run = 0; // Reset calibration
         }
-        vTaskResume(*task_lcd_handle);
     }
     
     /* CC button */
@@ -105,7 +105,6 @@ static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
         {
             ui_state.selected_set_point = !ui_state.selected_set_point;
             ui_state.cursor_pos = 1;
-            vTaskResume(*task_lcd_handle);
         }
         else if (ui_state.run_state == 0 && ui_state.mode != mode_cc)
         {
@@ -113,7 +112,6 @@ static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
             ui_state.cursor_pos = 1;
             ui_state.selected_set_point = 0;
             reset_setting_values();
-            vTaskResume(*task_lcd_handle);
         }
         
     }
@@ -127,8 +125,6 @@ static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
             ui_state.mode = mode_cv;
             ui_state.cursor_pos = 0;
             ui_state.selected_set_point = 0;
-            reset_setting_values();
-            vTaskResume(*task_lcd_handle);
         }
     }
     
@@ -142,7 +138,6 @@ static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
             ui_state.cursor_pos = 0;
             ui_state.selected_set_point = 0;
             reset_setting_values();
-            vTaskResume(*task_lcd_handle);
         }
     }
     
@@ -156,7 +151,6 @@ static uint32_t evaluate_ui(TaskHandle_t *task_lcd_handle)
             ui_state.cursor_pos = 0;
             ui_state.selected_set_point = 0;
             reset_setting_values();
-            vTaskResume(*task_lcd_handle);
         }
     }
     return 0;
