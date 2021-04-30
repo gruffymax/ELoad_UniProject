@@ -77,7 +77,7 @@ void task_control(void *argument)
           write_dac1_value(0);
           voltage_in = (float)get_voltage() / 1000;
         }
-        vTaskDelayUntil(&LastWakeTime, 5);
+        vTaskDelayUntil(&LastWakeTime, 10);
     }
 }
 static uint32_t control_loop_cc(void)
