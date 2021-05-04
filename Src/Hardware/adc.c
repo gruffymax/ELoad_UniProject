@@ -12,7 +12,7 @@ void init_adc(void)
 {
    /* Enable the ADC Vreg */
    SET_BIT(ADC1->CR, ADC_CR_ADVREGEN);
-   MODIFY_REG(ADC1_COMMON->CCR, ADC_CCR_PRESC, ADC_CCR_PRESC_1); // Prescale 4
+   MODIFY_REG(ADC1_COMMON->CCR, ADC_CCR_PRESC, ADC_CCR_PRESC_0 || ADC_CCR_PRESC_3); // Prescale 4
    /* Create a 20us delay */
    uint16_t i = 0;
    for (i=0; i<360; i++)
