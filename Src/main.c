@@ -7,9 +7,11 @@
 #include "stm32g0xx.h"
 #include "init.h"
 
+/* The following header files are part of FreeRTOS */
 #include "FreeRTOS.h"
 #include "task.h"
 #include "queue.h"
+/*----------------------------------*/
 
 #include "task_ui.h"
 #include "task_lcd.h"
