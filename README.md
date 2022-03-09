@@ -32,6 +32,16 @@ An STM32G071CB Cortex M0+ microcontroller was used to manage the analogue
 control loop. Voltage and current was also measured by the MCU and used to
 provide real time power dissipation information. FreeRTOS was used to ensure
 a reliable software control loop could execute alongside user input and an LCD
-display. 
+display.
+
+## Tools
+I use Linux as my daily operating system. I tried to use open source tools
+where possible including:
+- ARM GCC Compiler toolchain
+- JLink debugger
+- GDB
+- Kicad
+- NGSpice
+- GNU Octave
 
 ![ElectronicLoad2](EL2.jpg)
